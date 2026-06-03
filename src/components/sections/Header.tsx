@@ -15,6 +15,10 @@ const navItems = [
   { label: "Beispiele", href: "#" },
 ];
 
+/** Inter Medium (500) – explizit auch auf <button>, damit die Stärke greift */
+const headerNavItemClass =
+  "font-sans text-sm font-medium leading-none text-[#BBBCC3] hover:text-white";
+
 export function Header() {
   const [open, setOpen] = useState(false);
   const [leistungenOpen, setLeistungenOpen] = useState(false);
@@ -64,8 +68,9 @@ export function Header() {
                       aria-haspopup="true"
                       onClick={() => setLeistungenOpen((v) => !v)}
                       className={cn(
-                        "flex items-center gap-0.5 px-2 py-1 text-sm font-medium hover:text-white",
-                        leistungenOpen ? "text-white" : "text-[#BBBCC3]",
+                        "flex items-center gap-0.5 px-2 py-1",
+                        headerNavItemClass,
+                        leistungenOpen && "text-white",
                       )}
                     >
                       {item.label}
@@ -80,7 +85,7 @@ export function Header() {
                   ) : (
                     <a
                       href={item.href}
-                      className="flex items-center gap-0.5 px-2 py-1 text-sm font-medium text-[#BBBCC3] hover:text-white"
+                      className={cn("flex items-center gap-0.5 px-2 py-1", headerNavItemClass)}
                     >
                       {item.label}
                     </a>
@@ -91,7 +96,7 @@ export function Header() {
           </div>
           <a
             href="#"
-            className="hidden px-2 text-sm font-medium text-[#BBBCC3] md:inline hover:text-white"
+            className={cn("hidden px-2 md:inline", headerNavItemClass)}
           >
             Login
           </a>
@@ -163,7 +168,10 @@ export function Header() {
                       <button
                         type="button"
                         onClick={() => setMobileLeistungenOpen((v) => !v)}
-                        className="flex w-full items-center justify-between rounded-lg px-2 py-2 text-sm font-medium text-[#BBBCC3] hover:bg-white/5 hover:text-white"
+                        className={cn(
+                          "flex w-full items-center justify-between rounded-lg px-2 py-2 hover:bg-white/5",
+                          headerNavItemClass,
+                        )}
                       >
                         {item.label}
                         <ChevronDown
@@ -188,7 +196,10 @@ export function Header() {
                     <a
                       href={item.href}
                       onClick={() => setOpen(false)}
-                      className="block rounded-lg px-2 py-2 text-sm font-medium text-[#BBBCC3] hover:bg-white/5 hover:text-white"
+                      className={cn(
+                        "block rounded-lg px-2 py-2 hover:bg-white/5",
+                        headerNavItemClass,
+                      )}
                     >
                       {item.label}
                     </a>
@@ -198,7 +209,7 @@ export function Header() {
               <li>
                 <a
                   href="#"
-                  className="block rounded-lg px-2 py-2 text-sm font-medium text-[#BBBCC3]"
+                  className={cn("block rounded-lg px-2 py-2", headerNavItemClass)}
                 >
                   Login
                 </a>

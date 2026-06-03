@@ -53,12 +53,12 @@ export function PaperVisibilityHeader() {
           </div>
         ))}
       </div>
-      <span className={featureCardCtaClass}>
-        <span className="w-max shrink-0 font-['Inter',system-ui,sans-serif] text-sm font-medium leading-[142.857%] text-[#181925]">Erstgespräch vereinbaren</span>
+      <a href="/leistungen/seo" className={featureCardCtaClass}>
+        <span className="w-max shrink-0 font-['Inter',system-ui,sans-serif] text-sm font-medium leading-[142.857%] text-[#181925]">Mehr erfahren</span>
         <svg width={16} height={16} viewBox="0 0 16 16" className="shrink-0" aria-hidden>
           <path d="M6 12L10 8L6 4" fill="none" stroke="#181925" strokeWidth={1.25} strokeLinecap="round" strokeLinejoin="round" />
         </svg>
-      </span>
+      </a>
     </div>
   );
 }

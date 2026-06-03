@@ -49,7 +49,7 @@ export function Footer() {
             <p className="text-sm font-medium text-[#181925]">Leistungen</p>
             <ul className="mt-1 flex flex-col gap-1">
               {serviceLinks.map((link) => (
-                <li key={link.href}>
+                <li key={link.label}>
                   <Link
                     href={link.href}
                     className="text-sm font-medium text-[#999999] hover:text-[#181925]"

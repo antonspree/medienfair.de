@@ -50,12 +50,12 @@ export function PaperFeatureCardLeads() {
             </div>
           ))}
         </div>
-        <span className={featureCardCtaClass}>
-          <span className="font-['Inter',system-ui,sans-serif] text-sm font-medium leading-[142.857%] text-[#181925]">Durchsicht bekommen</span>
+        <a href="/leistungen/qualifizierung" className={featureCardCtaClass}>
+          <span className="font-['Inter',system-ui,sans-serif] text-sm font-medium leading-[142.857%] text-[#181925]">Mehr erfahren</span>
           <svg width={16} height={16} viewBox="0 0 16 16" className="shrink-0" aria-hidden>
             <path d="M6 12L10 8L6 4" fill="none" stroke="#181925" strokeWidth={1.25} strokeLinecap="round" strokeLinejoin="round" />
           </svg>
-        </span>
+        </a>
       </div>
       <div className="flex h-52.5 w-full shrink-0 flex-col items-center justify-center gap-4 px-8 pb-6">
         <div className="relative mx-auto my-6 min-w-[288px] w-fit">

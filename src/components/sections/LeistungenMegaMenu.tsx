@@ -94,7 +94,7 @@ export function LeistungenMegaMenu({ onNavigate, className }: LeistungenMegaMenu
         onClick={onNavigate}
         className="rounded-xl px-2 py-1.5 text-center text-xs font-medium text-[#888] transition-colors hover:text-[#BBBCC3]"
       >
-        Alle Leistungen im Überblick
+        Alle Leistungen auf der Startseite
       </Link>
     </div>
   );
