@@ -1,7 +1,8 @@
+import Link from "next/link";
 import { LogoIcon } from "@/components/icons/LogoIcon";
+import { serviceLinks } from "@/lib/service-links";
 
 const companyLinks = ["Für wen", "Ablauf", "Wissen", "Über uns"];
-const serviceLinks = ["Website", "SEO", "Meta Ads", "Positionierung"];
 const legalLinks = ["Impressum", "Datenschutz", "Cookie-Hinweise"];
 
 export function Footer() {
@@ -9,7 +10,9 @@ export function Footer() {
     <footer className="bg-white pt-16 pb-12">
       <div className="mx-auto grid w-full max-w-5xl gap-10 px-5 sm:grid-cols-[1fr_1.2fr] sm:gap-8">
         <div className="flex flex-col gap-4">
-          <LogoIcon className="w-[25px]" variant="dark" />
+          <Link href="/" aria-label="Medienfair Startseite">
+            <LogoIcon className="w-[25px]" variant="dark" />
+          </Link>
           <p className="max-w-[288px] text-sm font-medium text-[#999999]">
             Planbare Kunden- und Vertriebspartnergewinnung für Finanzberater –
             mit Website, SEO und Meta Ads.
@@ -46,13 +49,13 @@ export function Footer() {
             <p className="text-sm font-medium text-[#181925]">Leistungen</p>
             <ul className="mt-1 flex flex-col gap-1">
               {serviceLinks.map((link) => (
-                <li key={link}>
-                  <a
-                    href="#leistungen"
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
                     className="text-sm font-medium text-[#999999] hover:text-[#181925]"
                   >
-                    {link}
-                  </a>
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>
