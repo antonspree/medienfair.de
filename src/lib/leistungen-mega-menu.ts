@@ -1,37 +1,46 @@
+import { leistungHref } from "@/lib/service-links";
+
 /** Ausgewählte Leistungen fürs Header-Mega-Menü – nicht die komplette Liste. */
 export const leistungenMegaMenuItems = [
   {
-    title: "Website",
-    subtitle: "Vertrauensbasis, die Anfragen bringt",
-    href: "/#leistungen",
+    title: "SEO",
+    subtitle: "Gefunden werden, vor allen anderen",
+    href: leistungHref("seo"),
     cardBg: "#1B2E1F",
     iconBg: "#33C758",
-    iconType: "clock" as const,
+    iconType: "globe" as const,
   },
   {
-    title: "Sichtbarkeit",
-    subtitle: "Gefunden werden, vor allen anderen",
-    href: "/#leistungen",
-    cardBg: "#151F2E",
-    iconBg: "#2C78FC",
-    iconType: "globe" as const,
+    title: "Meta Ads",
+    subtitle: "Reichweite mit klarem Funnel",
+    href: leistungHref("meta-ads"),
+    cardBg: "#1A1F2E",
+    iconBg: "#4562D7",
+    iconType: "clock" as const,
   },
   {
     title: "Positionierung",
     subtitle: "Klar erkennbar, nicht austauschbar",
-    href: "/leistungen/positionierung",
+    href: leistungHref("positionierung"),
     cardBg: "#2A1A24",
     iconBg: "#D6409F",
     iconType: "face" as const,
   },
   {
-    title: "Anfragen",
+    title: "Qualifizierung",
     subtitle: "Nur passende Interessenten",
-    href: "/#leistungen",
+    href: leistungHref("qualifizierung"),
     cardBg: "#2A2210",
     iconBg: "#FFA600",
     iconType: "gauge" as const,
   },
+] as const;
+
+/** Kompakte Links unter dem 2×2-Grid – eigene Infoseiten, ohne große Karte */
+export const leistungenMegaMenuMoreLinks = [
+  { label: "Content", href: leistungHref("content") },
+  { label: "CRM", href: leistungHref("crm") },
+  { label: "Recruiting", href: leistungHref("recruiting") },
 ] as const;
 
 export type LeistungenMegaIcon = (typeof leistungenMegaMenuItems)[number]["iconType"];

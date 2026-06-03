@@ -2,20 +2,20 @@ import type { Metadata } from "next";
 import { Header } from "@/components/sections/Header";
 import { CtaSection } from "@/components/sections/CtaSection";
 import { Footer } from "@/components/sections/Footer";
-import { PositionierungSubpage } from "@/components/pages/positionierung/PositionierungSubpage";
+import { BeispieleComingSoon } from "@/components/pages/BeispieleComingSoon";
 
 export const metadata: Metadata = {
-  title: "Positionierung – Medienfair",
+  title: "Beispiele – Medienfair",
   description:
-    "Klare Positionierung für Finanzberater: Zielgruppe, Expertenrolle und einheitliche Botschaft – damit du online nicht wie jeder andere wirkst.",
+    "Ausgewählte Projekte für Finanzberater – bald verfügbar. Websites, Kampagnen und Online-Systeme von Medienfair.",
 };
 
-export default function PositionierungPage() {
+export default function BeispielePage() {
   return (
     <>
       <Header />
       <main>
-        <PositionierungSubpage />
+        <BeispieleComingSoon />
         <CtaSection />
       </main>
       <Footer />

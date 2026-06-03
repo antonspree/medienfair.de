@@ -17,7 +17,7 @@ export function CtaSection() {
             und ohne Verkaufsdruck.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button href="#kontakt">Kostenloses Erstgespräch</Button>
+            <Button href="/kontakt">Kostenloses Erstgespräch</Button>
             <Button variant="secondary" href="#ablauf">
               See demo
             </Button>

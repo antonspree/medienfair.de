@@ -2,6 +2,7 @@ import Link from "next/link";
 import { cn } from "@/lib/cn";
 import {
   leistungenMegaMenuItems,
+  leistungenMegaMenuMoreLinks,
   type LeistungenMegaIcon,
 } from "@/lib/leistungen-mega-menu";
 
@@ -89,12 +90,37 @@ export function LeistungenMegaMenu({ onNavigate, className }: LeistungenMegaMenu
           </Link>
         ))}
       </div>
+
+      <div className="border-t border-white/10 px-2 pt-2.5">
+        <nav
+          className="flex flex-wrap items-center justify-center gap-x-1.5 gap-y-1"
+          aria-label="Weitere Leistungen"
+        >
+          {leistungenMegaMenuMoreLinks.map((link, index) => (
+            <span key={link.href} className="inline-flex items-center gap-1.5">
+              {index > 0 && (
+                <span className="text-[#555555]" aria-hidden>
+                  ·
+                </span>
+              )}
+              <Link
+                href={link.href}
+                onClick={onNavigate}
+                className="text-xs font-medium text-[#BBBCC3] transition-colors hover:text-white"
+              >
+                {link.label}
+              </Link>
+            </span>
+          ))}
+        </nav>
+      </div>
+
       <Link
         href="/#leistungen"
         onClick={onNavigate}
-        className="rounded-xl px-2 py-1.5 text-center text-xs font-medium text-[#888] transition-colors hover:text-[#BBBCC3]"
+        className="rounded-xl px-2 py-1 text-center text-xs font-medium text-[#888888] transition-colors hover:text-[#BBBCC3]"
       >
-        Alle Leistungen im Überblick
+        Alle Leistungen auf der Startseite
       </Link>
     </div>
   );
