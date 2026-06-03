@@ -21,7 +21,7 @@ export function Header() {
         initial={{ opacity: 0, y: -12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="flex h-[52px] w-full max-w-[540px] items-center gap-2 rounded-[20px] bg-[#141414] pl-4 pr-3"
+        className="flex h-[52px] w-full max-w-[540px] shrink-0 items-center gap-2 rounded-[20px] bg-[#141414] pl-4 pr-3"
       >
         <LogoIcon />
         <div className="flex flex-1 items-center">

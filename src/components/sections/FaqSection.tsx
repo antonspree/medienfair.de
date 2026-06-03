@@ -4,89 +4,88 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { SectionBadge } from "@/components/ui/SectionBadge";
 import { Reveal } from "@/components/motion/Reveal";
+import { superellipse, fontInter } from "@/lib/paper";
+import { IconChevronFaq } from "@/components/icons/paper/Icons";
 
+/** FAQ-Inhalte für Finanzberater (ersetzt Paper-Platzhalter „Visitors“) */
 const faqs = [
   {
-    q: "Für wen ist Medienfair gedacht?",
-    a: "Für Finanzberater und Finanzdienstleister, die online planbar qualifizierte Kunden- und Partneranfragen gewinnen möchten.",
+    question: "Für wen ist das Angebot von Medienfair gedacht?",
+    answer:
+      "Für Finanzberater und Finanzdienstleister, die online klar positioniert sein und planbar qualifizierte Anfragen oder Partner gewinnen wollen – nicht nur eine statische Visitenkarten-Website.",
   },
   {
-    q: "Brauche ich schon eine Website?",
-    a: "Nein. Wir können bestehende Präsenzen optimieren oder ein neues System von Grund auf aufbauen.",
+    question: "Ist die Umsetzung DSGVO-konform?",
+    answer:
+      "Ja. Datenschutz, Impressum, Cookie-Einwilligung und saubere Kontakt- sowie Anfrageprozesse werden von Anfang an mitgedacht – besonders wichtig im Finanzbereich.",
   },
   {
-    q: "Wie läuft die kostenlose Analyse ab?",
-    a: "Im Erstgespräch schauen wir uns Ziele, Zielgruppe und Ist-Zustand an – unverbindlich und ohne Verkaufsdruck.",
+    question: "Brauche ich bereits eine Website?",
+    answer:
+      "Nein. Wir starten mit Zielen und Positionierung. Eine bestehende Website können wir übernehmen oder neu aufsetzen – je nachdem, was für dein System sinnvoller ist.",
   },
   {
-    q: "Was kostet das System?",
-    a: "Die Investition hängt vom Umfang ab. Nach der Analyse erhältst du eine transparente Empfehlung.",
+    question: "Was passiert im kostenlosen Erstgespräch?",
+    answer:
+      "Wir schauen uns deine aktuelle Situation an: Positionierung, Website, Sichtbarkeit und Anfragen. Du erhältst eine ehrliche Einschätzung, ob und wie ein Online-System für dich passt – unverbindlich und ohne Verkaufsdruck.",
   },
   {
-    q: "Wie schnell sehe ich Ergebnisse?",
-    a: "Erste strukturelle Verbesserungen sind oft innerhalb weniger Wochen sichtbar; nachhaltige Anfragen brauchen konsequente Umsetzung.",
+    question: "Wie lange dauert es, bis alles live ist?",
+    answer:
+      "Nach dem Erstgespräch entwickeln wir Struktur, Texte und Design. Der Weg bis zum Launch hängt vom Umfang und deinem Feedback ab – einen realistischen Zeitrahmen nennen wir dir im Gespräch.",
   },
   {
-    q: "Sind Datenschutz und Impressum enthalten?",
-    a: "Ja. DSGVO, Consent und Pflichtseiten werden von Anfang an mitgedacht.",
+    question: "Gibt es versteckte Pakete oder Abo-Fallen?",
+    answer:
+      "Nein. Du bekommst ein klares System aus einem Guss – von der Positionierung über die Website bis zur Anfrage. Umfang und laufende Leistungen wie SEO oder Ads besprechen wir transparent vorab.",
   },
   {
-    q: "Übernehmt ihr auch SEO und Meta Ads?",
-    a: "Ja – Website, SEO und Meta Ads sind auf Finanzberater abgestimmt und greifen ineinander.",
+    question: "Was ist alles im System enthalten?",
+    answer:
+      "Je nach Setup: klare Positionierung, verkaufsstarke Website, SEO-Grundlagen, DSGVO-relevante Seiten, Anfrage- und Terminlogik sowie optional Meta Ads – abgestimmt auf Finanzberater.",
   },
   {
-    q: "Kann ich Partner und Kunden getrennt ansprechen?",
-    a: "Ja. Das System unterstützt getrennte Vertriebswege für Kunden und Partner.",
+    question: "Kann ich damit auch Partner gewinnen?",
+    answer:
+      "Ja. Das System ist für Kunden- und Partnergewinnung ausgelegt. Im Erstgespräch klären wir, welcher Kanal für dich gerade Priorität hat.",
   },
   {
-    q: "Wie unterscheidet ihr euch von einer Agentur?",
-    a: "Wir liefern kein isoliertes Design, sondern einen vollständigen digitalen Vertriebskanal.",
+    question: "Bekomme ich Transparenz über Anfragen und Ergebnisse?",
+    answer:
+      "Ja. Du siehst, wie Interessenten dich finden und anfragen – mit klarer Struktur statt Bauchgefühl. So kannst du deinen Vertrieb planbarer steuern.",
   },
-];
+] as const;
 
 export function FaqSection() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="flex flex-col gap-12 py-16">
+    <section id="faq" className={`flex flex-col gap-12 py-16 ${fontInter}`}>
       <Reveal className="mx-auto flex w-full max-w-3xl flex-col items-center gap-5 px-5 text-center">
         <SectionBadge>FAQ</SectionBadge>
-        <h2 className="max-w-xl text-3xl font-medium tracking-tight text-[#181925] sm:text-4xl sm:leading-[1.15]">
+        <h2 className="max-w-xl text-3xl font-medium tracking-[-0.63px] text-[#181925] sm:text-4xl sm:leading-[1.15]">
           Häufige Fragen – ehrliche Antworten
         </h2>
       </Reveal>
 
       <Reveal className="mx-auto w-full max-w-xl px-5">
         <div className="flex flex-col gap-0.5">
-          {faqs.map((item, i) => {
+          {faqs.map((faq, i) => {
             const isOpen = open === i;
             return (
-              <div key={item.q} className="rounded-xl bg-[#FAFAFA]">
+              <div key={faq.question} className={`rounded-xl bg-[#FAFAFA] ${superellipse}`}>
                 <button
                   type="button"
                   onClick={() => setOpen(isOpen ? null : i)}
                   className="flex w-full items-start justify-between gap-4 py-2.5 pr-3 pl-4 text-left"
                 >
-                  <span className="text-base font-medium text-[#181925]">
-                    {item.q}
-                  </span>
-                  <motion.svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
+                  <span className="text-base font-medium text-[#181925]">{faq.question}</span>
+                  <motion.span
                     animate={{ rotate: isOpen ? 180 : 0 }}
                     className="mt-0.5 shrink-0"
-                    aria-hidden
                   >
-                    <path
-                      d="M4 6L8 10L12 6"
-                      fill="none"
-                      stroke="#918DF6"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </motion.svg>
+                    <IconChevronFaq />
+                  </motion.span>
                 </button>
                 <AnimatePresence initial={false}>
                   {isOpen && (
@@ -94,12 +93,10 @@ export function FaqSection() {
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.25 }}
-                      className="overflow-hidden"
+                      transition={{ duration: 0.2 }}
+                      className="overflow-hidden px-4 pb-3"
                     >
-                      <p className="px-4 pb-3 text-sm leading-relaxed text-[#666666]">
-                        {item.a}
-                      </p>
+                      <p className="text-sm leading-relaxed text-[#666666]">{faq.answer}</p>
                     </motion.div>
                   )}
                 </AnimatePresence>
