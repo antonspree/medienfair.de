@@ -14,7 +14,8 @@ export function PaperVisibilityHeader() {
       <div className="flex min-h-[4.375rem] max-w-[288px] flex-col gap-0.5">
         <p className="font-['Inter',system-ui,sans-serif] text-2xl/7 font-medium text-[#2C78FC]">Sichtbarkeit</p>
         <p className="font-['Inter',system-ui,sans-serif] text-2xl/7 font-medium text-[#181925]">
-          Damit passende Interessenten dich finden, vor allen anderen.
+          Damit passende Interessenten dich finden,{" "}
+          <span className="font-semibold">vor allen anderen.</span>
         </p>
       </div>
       <div className="flex flex-col gap-1">

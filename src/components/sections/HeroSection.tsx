@@ -1,11 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import { SectionBadge } from "@/components/ui/SectionBadge";
 import { Reveal } from "@/components/motion/Reveal";
-import { float } from "@/lib/motion";
 import { fontInter } from "@/lib/paper";
 import { IconChevronRight, IconXCircle } from "@/components/icons/paper/Icons";
 
@@ -46,7 +44,7 @@ export function HeroSection() {
           <IconChevronRight stroke="#2C78FC" className="-ml-1" />
         </a>
 
-        <h1 className="text-center text-4xl font-medium leading-[1.15] text-balance text-[#141414] sm:text-5xl md:text-6xl md:leading-[1.12]">
+        <h1 className="text-center text-4xl font-semibold leading-[1.15] text-balance text-[#141414] sm:text-5xl md:text-6xl md:leading-[1.12]">
           Planbar Kunden und Partner gewinnen.
         </h1>
         <p className="max-w-md text-center text-lg font-medium leading-6 text-[#666666]">
@@ -82,11 +80,7 @@ export function HeroSection() {
           style={{ backgroundImage: "url(/images/hero-bg.webp)" }}
         >
           <div className="mx-auto max-w-5xl px-5">
-            <motion.div
-              variants={float}
-              animate="animate"
-              className="relative aspect-[8/5] w-full overflow-hidden rounded-lg shadow-[0_1px_3px_rgba(0,0,0,0.08),0_0_0_1px_rgba(0,0,0,0.02)]"
-            >
+            <div className="relative aspect-[8/5] w-full overflow-hidden rounded-lg shadow-[0_1px_3px_rgba(0,0,0,0.08),0_0_0_1px_rgba(0,0,0,0.02)]">
               <Image
                 src="/images/dashboard.png"
                 alt="Dashboard Vorschau"
@@ -95,7 +89,7 @@ export function HeroSection() {
                 sizes="(max-width: 1024px) 100vw, 1024px"
                 priority
               />
-            </motion.div>
+            </div>
           </div>
         </div>
       </Reveal>
@@ -115,11 +109,13 @@ export function HeroSection() {
         </Reveal>
 
         <Reveal delay={0.1} className="w-full max-w-sm lg:max-w-md">
-          <div className="flex max-w-[288px] flex-col gap-0.5">
+          <div className="flex max-w-[320px] flex-col gap-1.5">
             {problems.map((text) => (
-              <div key={text} className="flex items-center gap-2">
-                <IconXCircle />
-                <span className="text-sm font-medium leading-[155%] text-[#181925]">{text}</span>
+              <div key={text} className="flex items-center gap-2.5">
+                <IconXCircle className="!size-5" />
+                <span className="text-base font-medium leading-[155%] text-[#181925]">
+                  {text}
+                </span>
               </div>
             ))}
           </div>

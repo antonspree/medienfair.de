@@ -1,9 +1,7 @@
 "use client";
 
-const AVATAR_A =
-  "https://app.paper.design/file-assets/01KT5ABDQ2JGEFTPVQEFT3VF1G/3F7SJQR4R255G2FNMXPJ5XMRDR.webp";
-const AVATAR_B =
-  "https://app.paper.design/file-assets/01KT5ABDQ2JGEFTPVQEFT3VF1G/7ND1HKCPBC6YN0VR3VXV8P9BR2.webp";
+const AVATAR_A = "/images/about/team-1.webp";
+const AVATAR_B = "/images/about/team-3.webp";
 
 function FlagIcon({ fill }: { fill: string }) {
   return (
@@ -59,7 +57,7 @@ function KanbanCard({
       <div className="flex items-center justify-between">
         <div className="flex">
           {avatars.map((src, i) => (
-            <div key={src} className={i > 0 ? "-ml-1.5" : ""}>
+            <div key={`${src}-${i}`} className={i > 0 ? "-ml-1.5" : ""}>
               <Avatar src={src} />
             </div>
           ))}
@@ -132,14 +130,14 @@ export function PaperStepKanban3MS() {
             title="Prototyp Website"
             subtitle="Run usability tests with beta users"
             flagFill="oklch(76.9% 0.188 70.1)"
-            avatars={[AVATAR_B]}
+            avatars={["/images/about/team-2.webp"]}
             comments={2}
           />
           <KanbanCard
             title="Documentation"
             subtitle="Write API reference docs"
             flagFill="oklch(44.2% 0.017 285.8)"
-            avatars={[AVATAR_A]}
+            avatars={[AVATAR_B]}
             comments={1}
             attachments={1}
           />
