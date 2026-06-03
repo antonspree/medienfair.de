@@ -2,25 +2,38 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #141414;
+  --muted: #666666;
+  --muted-light: #999999;
+  --border: rgba(0, 0, 0, 0.05);
+  --surface: rgba(0, 0, 0, 0.03);
+  --primary: #4562d7;
+  --primary-blue: #2c78fc;
+  --accent-green: #33c758;
+  --accent-red: #ec6b5c;
+  --ink: #181925;
+  --nav-bg: #141414;
+  --nav-text: #bbbcc3;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-muted: var(--muted);
+  --color-muted-light: var(--muted-light);
+  --color-primary: var(--primary);
+  --color-primary-blue: var(--primary-blue);
+  --color-ink: var(--ink);
+  --color-surface: var(--surface);
+  --font-sans: var(--font-inter);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
