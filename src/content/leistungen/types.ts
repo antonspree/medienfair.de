@@ -10,6 +10,16 @@ export type ServiceArticleSection = {
   paragraphs: string[];
 };
 
+export type ServiceTeamBlock = {
+  heading: string;
+  intro?: string;
+  members: {
+    id: string;
+    name: string;
+    role: string;
+  }[];
+};
+
 export type ServicePageContent = {
   slug: string;
   badge: string;
@@ -29,4 +39,5 @@ export type ServicePageContent = {
     intro: string[];
     sections: ServiceArticleSection[];
   };
+  team?: ServiceTeamBlock;
 };

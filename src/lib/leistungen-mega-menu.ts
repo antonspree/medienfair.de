@@ -36,4 +36,11 @@ export const leistungenMegaMenuItems = [
   },
 ] as const;
 
+/** Kompakte Links unter dem 2×2-Grid – eigene Infoseiten, ohne große Karte */
+export const leistungenMegaMenuMoreLinks = [
+  { label: "Content", href: leistungHref("content") },
+  { label: "CRM", href: leistungHref("crm") },
+  { label: "Recruiting", href: leistungHref("recruiting") },
+] as const;
+
 export type LeistungenMegaIcon = (typeof leistungenMegaMenuItems)[number]["iconType"];

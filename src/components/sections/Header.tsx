@@ -11,8 +11,8 @@ import { cn } from "@/lib/cn";
 
 const navItems = [
   { label: "Leistungen", href: "/#leistungen", hasDropdown: true },
-  { label: "Ablauf", href: "/#ablauf" },
-  { label: "Beispiele", href: "#" },
+  { label: "Beispiele", href: "/beispiele" },
+  { label: "Wissen", href: "/wissen" },
 ];
 
 /** Inter Medium (500) – explizit auch auf <button>, damit die Stärke greift */
@@ -103,7 +103,7 @@ export function Header() {
           <Button
             variant="nav"
             size="sm"
-            href="/#kontakt"
+            href="/kontakt"
             className="hidden sm:inline-flex"
           >
             Analyse anfragen
@@ -215,7 +215,7 @@ export function Header() {
                 </a>
               </li>
               <li className="pt-2">
-                <Button variant="nav" size="sm" href="/#kontakt" className="w-full">
+                <Button variant="nav" size="sm" href="/kontakt" className="w-full">
                   Analyse anfragen
                 </Button>
               </li>

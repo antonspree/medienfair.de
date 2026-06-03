@@ -2,7 +2,14 @@ import Link from "next/link";
 import { LogoIcon } from "@/components/icons/LogoIcon";
 import { serviceLinks } from "@/lib/service-links";
 
-const companyLinks = ["Für wen", "Ablauf", "Wissen", "Über uns"];
+const companyLinks = [
+  { label: "Für wen", href: "/#leistungen" },
+  { label: "Ablauf", href: "/#ablauf" },
+  { label: "FAQ", href: "/faq" },
+  { label: "Wissen", href: "/wissen" },
+  { label: "Über uns", href: "/ueber-uns" },
+  { label: "Kontakt", href: "/kontakt" },
+];
 const legalLinks = ["Impressum", "Datenschutz", "Cookie-Hinweise"];
 
 export function Footer() {
@@ -34,13 +41,13 @@ export function Footer() {
             <p className="text-sm font-medium text-[#181925]">Unternehmen</p>
             <ul className="mt-1 flex flex-col gap-1">
               {companyLinks.map((link) => (
-                <li key={link}>
-                  <a
-                    href="#"
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
                     className="text-sm font-medium text-[#999999] hover:text-[#181925]"
                   >
-                    {link}
-                  </a>
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>

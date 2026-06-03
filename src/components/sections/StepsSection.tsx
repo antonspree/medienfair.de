@@ -45,7 +45,9 @@ export function StepsSection() {
         {steps.map((step, i) => (
           <Reveal key={step.num} delay={i * 0.1} className="h-full">
             <article className="flex h-full flex-col overflow-hidden rounded-2xl bg-black/[0.03]">
-              {step.illustration}
+              <div className="border-b border-solid border-black/[0.05]">
+                {step.illustration}
+              </div>
               <div className="flex flex-1 flex-col items-center justify-center gap-3 p-6 text-center">
                 <span className="flex h-9 w-10 items-center justify-center rounded-full bg-white text-lg font-medium text-[#4562D7]">
                   {step.num}

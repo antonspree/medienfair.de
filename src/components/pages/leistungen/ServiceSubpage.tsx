@@ -1,6 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import type { ServicePageContent } from "@/content/leistungen/types";
+import { TeamGrid } from "@/components/pages/leistungen/TeamGrid";
 import type { BenefitIconType } from "@/content/leistungen/types";
+import { Reveal } from "@/components/motion/Reveal";
 
 function BenefitIcon({ type, stroke }: { type: BenefitIconType; stroke: string }) {
   const common = {
@@ -60,7 +64,7 @@ export function ServiceSubpage({ content }: ServiceSubpageProps) {
     <div className="flex flex-col items-center gap-16.5 bg-white pt-12 pb-8 antialiased [font-synthesis:none] sm:pt-16">
       <div className="mx-auto flex w-full max-w-5xl flex-col items-start gap-17.75">
         <div className="flex flex-col items-center gap-1.5 self-stretch">
-          <div className="mx-auto flex w-full max-w-xl flex-col items-center gap-4 px-5">
+          <Reveal className="mx-auto flex w-full max-w-xl flex-col items-center gap-4 px-5">
             <div
               className="flex h-6 w-fit shrink-0 items-center justify-center gap-1 rounded-md border border-solid px-2"
               style={{
@@ -81,27 +85,29 @@ export function ServiceSubpage({ content }: ServiceSubpageProps) {
             <p className="flex flex-wrap justify-center text-balance text-center text-base font-medium leading-[150%] text-[#999999]">
               {content.subline}
             </p>
-          </div>
-          <div className="mx-auto mt-6 w-full max-w-5xl px-5">
+          </Reveal>
+
+          <Reveal delay={0.1} className="mx-auto mt-6 w-full max-w-5xl px-5">
             <div className="w-full overflow-clip rounded-xl border border-solid border-[#E8E8E8]">
               <div className="relative aspect-video w-full overflow-clip bg-[#F8F8F8]">
                 <Image
                   src={content.heroImage}
                   alt={content.heroAlt}
                   fill
-                  className="object-cover object-top"
+                  className={`object-cover ${content.slug === "ueber-uns" ? "object-center" : "object-top"}`}
                   sizes="(max-width: 1024px) 100vw, 1024px"
                   priority
                 />
               </div>
             </div>
-          </div>
+          </Reveal>
         </div>
 
         <div className="mx-auto grid w-full max-w-5xl shrink-0 grid-cols-1 justify-start gap-8 self-stretch bg-white px-5 sm:grid-cols-3 sm:gap-x-8 sm:gap-y-12">
-          {content.benefits.map((benefit) => (
-            <div
+          {content.benefits.map((benefit, i) => (
+            <Reveal
               key={benefit.text}
+              delay={i * 0.1}
               className="flex flex-col items-center justify-start gap-3"
             >
               <div
@@ -121,28 +127,42 @@ export function ServiceSubpage({ content }: ServiceSubpageProps) {
               <p className="flex flex-wrap justify-center text-center text-base/5 font-medium text-[#181925]">
                 {benefit.text}
               </p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>
 
       <div className="mx-auto flex w-full max-w-3xl flex-col items-center gap-6.75">
-        <div className="mx-auto flex w-full max-w-3xl flex-col items-center gap-5 px-5">
+        <Reveal className="mx-auto flex w-full max-w-3xl flex-col items-center gap-5 px-5">
           <h2 className="flex max-w-lg flex-wrap justify-center text-balance text-center text-[36px] font-medium leading-[111%] text-[#181925]">
             {content.article.title}
           </h2>
-        </div>
+        </Reveal>
+
         <div className="mx-auto w-full max-w-xl px-5">
-          {content.article.intro.map((paragraph) => (
-            <p
-              key={paragraph}
-              className="mt-4 text-base font-medium leading-[137.5%] text-[#666666]"
-            >
-              {paragraph}
-            </p>
-          ))}
-          {content.article.sections.map((section) => (
-            <div key={section.heading}>
+          <Reveal>
+            {content.article.intro.map((paragraph) => (
+              <p
+                key={paragraph}
+                className="mt-4 text-base font-medium leading-[137.5%] text-[#666666] first:mt-0"
+              >
+                {paragraph}
+              </p>
+            ))}
+          </Reveal>
+
+          {content.team ? (
+            <Reveal delay={0.08}>
+              <TeamGrid
+                heading={content.team.heading}
+                intro={content.team.intro}
+                members={content.team.members}
+              />
+            </Reveal>
+          ) : null}
+
+          {content.article.sections.map((section, i) => (
+            <Reveal key={section.heading} delay={i * 0.08}>
               <h3 className="mb-4 mt-10 text-lg font-medium leading-[140%] text-[#181925]">
                 {section.heading}
               </h3>
@@ -154,7 +174,7 @@ export function ServiceSubpage({ content }: ServiceSubpageProps) {
                   {paragraph}
                 </p>
               ))}
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>
