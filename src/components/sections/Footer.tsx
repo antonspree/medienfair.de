@@ -10,7 +10,11 @@ const companyLinks = [
   { label: "Über uns", href: "/ueber-uns" },
   { label: "Kontakt", href: "/kontakt" },
 ];
-const legalLinks = ["Impressum", "Datenschutz", "Cookie-Hinweise"];
+const legalLinks = [
+  { label: "Impressum", href: "/impressum" },
+  { label: "Datenschutz", href: "/datenschutz" },
+  { label: "Cookie-Hinweise", href: "#" },
+];
 
 export function Footer() {
   return (
@@ -71,13 +75,13 @@ export function Footer() {
             <p className="text-sm font-medium text-[#181925]">Rechtliches</p>
             <ul className="mt-1 flex flex-col gap-1">
               {legalLinks.map((link) => (
-                <li key={link}>
-                  <a
-                    href="#"
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
                     className="text-sm font-medium text-[#999999] hover:text-[#181925]"
                   >
-                    {link}
-                  </a>
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>
