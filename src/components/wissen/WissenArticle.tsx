@@ -11,12 +11,12 @@ export function WissenArticle({ term }: WissenArticleProps) {
   const categoryTitle = getWissenCategoryTitle(term.categoryId);
 
   return (
-    <article className={`max-w-[37.5rem] w-full py-8 sm:py-12 ${fontInter}`}>
+    <article className={`w-full py-6 sm:py-12 ${fontInter}`}>
       <span className="inline-flex h-6 items-center justify-center rounded-md bg-black/[0.08] px-2 text-sm font-medium text-black/40">
         {categoryTitle}
       </span>
 
-      <h1 className="my-4 text-[30px] font-medium leading-[120%] tracking-[-0.525px] text-[#181925]">
+      <h1 className="my-4 text-2xl font-medium leading-[120%] tracking-[-0.525px] text-[#181925] sm:text-[30px]">
         {term.title}
       </h1>
 

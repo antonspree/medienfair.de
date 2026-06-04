@@ -8,7 +8,11 @@ import { wissenTerms } from "@/content/wissen/terms";
 import { fontInter, paper } from "@/lib/paper";
 import { cn } from "@/lib/cn";
 
-export function WissenSidebar() {
+type WissenSidebarProps = {
+  onNavigate?: () => void;
+};
+
+export function WissenSidebar({ onNavigate }: WissenSidebarProps) {
   const pathname = usePathname();
 
   return (
@@ -36,6 +40,7 @@ export function WissenSidebar() {
                     <li key={term.slug}>
                       <Link
                         href={href}
+                        onClick={onNavigate}
                         className={cn(
                           "mb-1 flex h-6 items-center gap-2 text-sm font-medium last:mb-0",
                           active ? "text-[#181925]" : "text-[#666666] hover:text-[#181925]",

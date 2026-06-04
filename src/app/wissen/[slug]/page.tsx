@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { WissenArticle } from "@/components/wissen/WissenArticle";
 import { WissenShell } from "@/components/wissen/WissenShell";
-import { WissenTableOfContents } from "@/components/wissen/WissenTableOfContents";
 import { getWissenTerm, wissenSlugs } from "@/content/wissen/terms";
 
 type PageProps = {
@@ -29,7 +28,7 @@ export default async function WissenTermPage({ params }: PageProps) {
   if (!term) notFound();
 
   return (
-    <WissenShell toc={<WissenTableOfContents sections={term.sections} />}>
+    <WissenShell tocSections={term.sections}>
       <WissenArticle term={term} />
     </WissenShell>
   );
