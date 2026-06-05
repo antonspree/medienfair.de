@@ -29,7 +29,7 @@ export const leistungenPages: ServicePageContent[] = [
     headline: "Damit du nicht wie jeder andere wirkst.",
     subline:
       "Menschen entscheiden sich nicht für irgendeinen Finanzberater. Sie entscheiden sich für jemanden, der ihr Problem versteht, eine klare Lösung anbietet und online genau das transportiert.",
-    heroImage: "/images/dashboard.png",
+    heroImage: "/images/pos.webp",
     heroAlt: "Beispiel einer klar positionierten Berater-Website",
     benefits: [
       {
@@ -82,7 +82,7 @@ export const leistungenPages: ServicePageContent[] = [
     headline: "Damit dich die richtigen Menschen finden – nicht umgekehrt.",
     subline:
       "Wer heute nach einem Finanzberater sucht, startet bei Google. SEO sorgt dafür, dass du bei den Anliegen sichtbar bist, die wirklich zu deinem Angebot passen – regional und thematisch.",
-    heroImage: "/images/dashboard.png",
+    heroImage: "/images/seo.webp",
     heroAlt: "SEO-Auswertung und Sichtbarkeit im Dashboard",
     benefits: [
       {
@@ -136,7 +136,7 @@ export const leistungenPages: ServicePageContent[] = [
     headline: "Reichweite mit System – nicht mit Bauchgefühl.",
     subline:
       "Meta Ads können qualifizierte Anfragen bringen, wenn Botschaft, Zielgruppe und Funnel zusammenpassen. Wir bauen Kampagnen, die zu deiner Positionierung und Website greifen.",
-    heroImage: "/images/dashboard.png",
+    heroImage: "/images/met.webp",
     heroAlt: "Kampagnen- und Anfragenübersicht",
     benefits: [
       {
@@ -190,7 +190,7 @@ export const leistungenPages: ServicePageContent[] = [
     headline: "Gesehen werden – mit dem Gesicht, das zu dir passt.",
     subline:
       "Texte allein reichen selten. Professionelle Fotos und Videos machen dich greifbar, schaffen Vertrauen und heben dich von generischen Stock-Bildern ab.",
-    heroImage: "/images/hero-bg.webp",
+    heroImage: "/images/video.png",
     heroAlt: "Professioneller Content für Finanzberater",
     benefits: [
       {
@@ -298,7 +298,7 @@ export const leistungenPages: ServicePageContent[] = [
     headline: "Weniger Gespräche – mehr passende.",
     subline:
       "Nicht jede Anfrage ist ein Kunde. Qualifizierung sorgt dafür, dass du Zeit in Menschen investierst, die wirklich zu deinem Angebot und deiner Zielgruppe passen.",
-    heroImage: "/images/dashboard.png",
+    heroImage: "/images/qual.webp",
     heroAlt: "Qualifizierte Anfragen und Terminlogik",
     benefits: [
       {

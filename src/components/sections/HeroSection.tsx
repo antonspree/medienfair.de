@@ -80,11 +80,13 @@ export function HeroSection() {
       </Reveal>
 
       <Reveal delay={0.15} className="w-full">
-        <div
-          className="bg-cover bg-center bg-no-repeat pt-28 pb-20"
-          style={{ backgroundImage: "url(/images/hero-bg.webp)" }}
-        >
-          <div className="mx-auto max-w-5xl px-5">
+        <div className="relative pt-28 pb-20">
+          <div
+            aria-hidden
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat grayscale"
+            style={{ backgroundImage: "url(/images/hero-bg.webp)" }}
+          />
+          <div className="relative mx-auto max-w-5xl px-5">
             <div className="group relative aspect-[8/5] w-full overflow-hidden rounded-lg shadow-[0_1px_3px_rgba(0,0,0,0.08),0_0_0_1px_rgba(0,0,0,0.02)]">
               <Image
                 src="/thumpnailhome2.png"
