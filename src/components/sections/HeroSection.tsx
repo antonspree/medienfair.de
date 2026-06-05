@@ -87,7 +87,7 @@ export function HeroSection() {
           <div className="mx-auto max-w-5xl px-5">
             <div className="group relative aspect-[8/5] w-full overflow-hidden rounded-lg shadow-[0_1px_3px_rgba(0,0,0,0.08),0_0_0_1px_rgba(0,0,0,0.02)]">
               <Image
-                src="/thumpnailhome.png"
+                src="/thumpnailhome2.png"
                 alt="Medienfair Video-Vorschau"
                 fill
                 className="object-cover object-center"
