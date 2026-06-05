@@ -6,7 +6,7 @@ import { BeispieleComingSoon } from "@/components/pages/BeispieleComingSoon";
 export const metadata: Metadata = {
   title: "Beispiele – Medienfair",
   description:
-    "Beispiel-Landingpages für Finanzberater: Vertriebspartner gesucht, Recruiting und mehr – gebaut mit dem Medienfair-System.",
+    "Beispiel-Landingpages für Finanzberater – Kundengewinnung, Recruiting und mehr, gebaut mit dem Medienfair-System.",
 };
 
 export default function BeispielePage() {
