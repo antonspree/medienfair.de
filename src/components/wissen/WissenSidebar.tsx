@@ -27,6 +27,31 @@ export function WissenSidebar({ onNavigate }: WissenSidebarProps) {
           </span>
         </Link>
 
+        <div className="flex flex-col gap-1.5">
+          <p className="text-sm font-medium text-black/40">Start</p>
+          <ul className="flex flex-col">
+            <li>
+              <Link
+                href="/wissen"
+                onClick={onNavigate}
+                className={cn(
+                  "mb-1 flex h-6 items-center gap-2 text-sm font-medium",
+                  pathname === "/wissen" ? "text-[#181925]" : "text-[#666666] hover:text-[#181925]",
+                )}
+              >
+                <span className="line-clamp-1">Willkommen</span>
+                {pathname === "/wissen" ? (
+                  <span
+                    className="size-2 shrink-0 rounded-full"
+                    style={{ backgroundColor: paper.faqChevron }}
+                    aria-hidden
+                  />
+                ) : null}
+              </Link>
+            </li>
+          </ul>
+        </div>
+
         {wissenCategories.map((category) => {
           const terms = wissenTerms.filter((t) => t.categoryId === category.id);
           return (

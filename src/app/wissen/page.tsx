@@ -1,6 +1,17 @@
-import { redirect } from "next/navigation";
-import { getDefaultWissenSlug } from "@/content/wissen/terms";
+import type { Metadata } from "next";
+import { WissenShell } from "@/components/wissen/WissenShell";
+import { WissenWelcome } from "@/components/wissen/WissenWelcome";
+import { wissenWelcome } from "@/content/wissen/welcome";
+
+export const metadata: Metadata = {
+  title: "Willkommen – Wissen | Medienfair",
+  description: wissenWelcome.metaDescription,
+};
 
 export default function WissenIndexPage() {
-  redirect(`/wissen/${getDefaultWissenSlug()}`);
+  return (
+    <WissenShell tocSections={wissenWelcome.sections}>
+      <WissenWelcome />
+    </WissenShell>
+  );
 }
