@@ -1,9 +1,12 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { SectionBadge } from "@/components/ui/SectionBadge";
 import { Reveal } from "@/components/motion/Reveal";
+import { PaperPlayButton } from "@/components/paper/nodes/PaperPlayButton";
+import { YoutubeVideoModal } from "@/components/ui/YoutubeVideoModal";
 import { fontInter } from "@/lib/paper";
 import { IconChevronRight, IconXCircle } from "@/components/icons/paper/Icons";
 
@@ -24,6 +27,8 @@ const problems = [
 ];
 
 export function HeroSection() {
+  const [videoOpen, setVideoOpen] = useState(false);
+
   return (
     <section className={`flex flex-col items-center gap-16 overflow-hidden bg-white pb-16 pt-10 ${fontInter}`}>
       <Reveal className="mx-auto flex w-full max-w-3xl flex-col items-center gap-[17px] px-5">
@@ -80,15 +85,16 @@ export function HeroSection() {
           style={{ backgroundImage: "url(/images/hero-bg.webp)" }}
         >
           <div className="mx-auto max-w-5xl px-5">
-            <div className="relative aspect-[8/5] w-full overflow-hidden rounded-lg shadow-[0_1px_3px_rgba(0,0,0,0.08),0_0_0_1px_rgba(0,0,0,0.02)]">
+            <div className="group relative aspect-[8/5] w-full overflow-hidden rounded-lg shadow-[0_1px_3px_rgba(0,0,0,0.08),0_0_0_1px_rgba(0,0,0,0.02)]">
               <Image
-                src="/images/dashboard.png"
-                alt="Dashboard Vorschau"
+                src="/thumpnailhome.png"
+                alt="Medienfair Video-Vorschau"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 1024px"
                 priority
               />
+              <PaperPlayButton onClick={() => setVideoOpen(true)} />
             </div>
           </div>
         </div>
@@ -121,6 +127,8 @@ export function HeroSection() {
           </div>
         </Reveal>
       </div>
+
+      <YoutubeVideoModal open={videoOpen} onClose={() => setVideoOpen(false)} />
     </section>
   );
 }

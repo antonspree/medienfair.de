@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Medienfair – Planbar Kunden und Partner gewinnen",
   description:
     "Klare Systeme für Finanzberater – für mehr Sichtbarkeit, Vertrauen und qualifizierte Anfragen.",
+  icons: {
+    icon: "/svg/logo.svg",
+  },
 };
 
 export default function RootLayout({
