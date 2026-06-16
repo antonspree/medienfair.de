@@ -1,4 +1,5 @@
 import type { ServicePageContent } from "@/content/leistungen/types";
+import { kundengewinnungPage } from "@/content/leistungen/kundengewinnung";
 
 const sharedSections = {
   howWeWork: (paragraphs: string[]) => ({
@@ -16,6 +17,7 @@ const sharedSections = {
 };
 
 export const leistungenPages: ServicePageContent[] = [
+  kundengewinnungPage,
   {
     slug: "positionierung",
     badge: "Positionierung",

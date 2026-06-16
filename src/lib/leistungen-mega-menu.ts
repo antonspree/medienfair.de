@@ -38,6 +38,7 @@ export const leistungenMegaMenuItems = [
 
 /** Kompakte Links unter dem 2×2-Grid – eigene Infoseiten, ohne große Karte */
 export const leistungenMegaMenuMoreLinks = [
+  { label: "Kundengewinnung", href: leistungHref("kundengewinnung") },
   { label: "Content", href: leistungHref("content") },
   { label: "CRM", href: leistungHref("crm") },
   { label: "Recruiting", href: leistungHref("recruiting") },

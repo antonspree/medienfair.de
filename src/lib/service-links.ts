@@ -1,4 +1,5 @@
 export const serviceLinks = [
+  { label: "Kundengewinnung", href: "/leistungen/kundengewinnung" },
   { label: "Positionierung", href: "/leistungen/positionierung" },
   { label: "SEO", href: "/leistungen/seo" },
   { label: "Meta Ads", href: "/leistungen/meta-ads" },
