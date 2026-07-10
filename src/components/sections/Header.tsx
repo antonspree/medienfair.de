@@ -17,7 +17,10 @@ const navItems = [
 
 /** Inter Medium (500) – explizit auch auf <button>, damit die Stärke greift */
 const headerNavItemClass =
-  "font-sans text-sm font-medium leading-none text-[#BBBCC3] hover:text-white";
+  "font-sans text-sm font-medium leading-none text-[#1b263b]/80 hover:text-[#1b263b]";
+
+const mobileNavItemClass =
+  "font-sans text-sm font-medium leading-none text-white/80 hover:text-white";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -46,16 +49,16 @@ export function Header() {
   const closeMega = () => setLeistungenOpen(false);
 
   return (
-    <header className="sticky top-0 z-50 flex flex-col items-center px-4 pt-6 pb-4 sm:pt-8">
+    <header className="sticky top-0 z-50 flex w-full flex-col items-center bg-transparent px-4 pt-6 pb-4 sm:pt-8">
       <div ref={headerRef} className="relative w-full max-w-[540px]">
         <motion.nav
           initial={{ opacity: 0, y: -12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="flex h-[52px] w-full shrink-0 items-center gap-2 rounded-[20px] bg-[#141414] pl-4 pr-3"
+          className="flex h-[52px] w-full shrink-0 items-center gap-2 rounded-[20px] bg-[#FAFAFA] pl-4 pr-3"
         >
           <Link href="/" className="shrink-0" aria-label="Medienfair Startseite">
-            <LogoIcon />
+            <LogoIcon variant="dark" />
           </Link>
           <div className="flex flex-1 items-center">
             <ul className="hidden items-start md:flex">
@@ -70,12 +73,12 @@ export function Header() {
                       className={cn(
                         "flex items-center gap-0.5 px-2 py-1",
                         headerNavItemClass,
-                        leistungenOpen && "text-white",
+                        leistungenOpen && "text-[#1b263b]",
                       )}
                     >
                       {item.label}
                       <ChevronDown
-                        stroke={leistungenOpen ? "#FFFFFF" : "#BBBCC3"}
+                        stroke={leistungenOpen ? "#1b263b" : "#1b263b99"}
                         className={cn(
                           "transition-transform duration-200",
                           leistungenOpen && "rotate-180",
@@ -111,7 +114,7 @@ export function Header() {
           <button
             type="button"
             aria-label="Menü"
-            className="flex size-8 items-center justify-center rounded-lg text-[#BBBCC3] md:hidden"
+            className="flex size-8 items-center justify-center rounded-lg text-[#1b263b] md:hidden"
             onClick={() => {
               setOpen((v) => !v);
               setLeistungenOpen(false);
@@ -144,7 +147,7 @@ export function Header() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -6 }}
               transition={{ duration: 0.2 }}
-              className="absolute top-[calc(100%+8px)] left-0 z-50 hidden w-full rounded-[20px] bg-[#141414] p-2 shadow-[0_8px_32px_rgba(0,0,0,0.24)] md:block"
+              className="absolute top-[calc(100%+8px)] left-0 z-50 hidden w-full rounded-[20px] bg-[#1b263b] p-2 shadow-[0_8px_32px_rgba(0,0,0,0.24)] md:block"
             >
               <LeistungenMegaMenu onNavigate={closeMega} />
             </motion.div>
@@ -158,7 +161,7 @@ export function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="mt-2 w-full max-w-[540px] overflow-hidden rounded-2xl bg-[#141414] px-4 py-3 md:hidden"
+            className="mt-2 w-full max-w-[540px] overflow-hidden rounded-2xl bg-[#1b263b] px-4 py-3 md:hidden"
           >
             <ul className="flex flex-col gap-1">
               {navItems.map((item) => (
@@ -170,12 +173,12 @@ export function Header() {
                         onClick={() => setMobileLeistungenOpen((v) => !v)}
                         className={cn(
                           "flex w-full items-center justify-between rounded-lg px-2 py-2 hover:bg-white/5",
-                          headerNavItemClass,
+                          mobileNavItemClass,
                         )}
                       >
                         {item.label}
                         <ChevronDown
-                          stroke="#BBBCC3"
+                          stroke={mobileLeistungenOpen ? "#FFFFFF" : "#FFFFFF99"}
                           className={cn(
                             "transition-transform duration-200",
                             mobileLeistungenOpen && "rotate-180",
@@ -198,7 +201,7 @@ export function Header() {
                       onClick={() => setOpen(false)}
                       className={cn(
                         "block rounded-lg px-2 py-2 hover:bg-white/5",
-                        headerNavItemClass,
+                        mobileNavItemClass,
                       )}
                     >
                       {item.label}
@@ -209,7 +212,7 @@ export function Header() {
               <li>
                 <a
                   href="#"
-                  className={cn("block rounded-lg px-2 py-2", headerNavItemClass)}
+                  className={cn("block rounded-lg px-2 py-2", mobileNavItemClass)}
                 >
                   Login
                 </a>

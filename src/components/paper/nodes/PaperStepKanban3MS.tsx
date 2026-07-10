@@ -50,10 +50,10 @@ function KanbanCard({
   return (
     <div className="mb-2 rounded-lg bg-white p-3 shadow-[0_0_0_1px_rgba(0,0,0,0.075),0_1px_3px_rgba(0,0,0,0.1),0_1px_2px_-1px_rgba(0,0,0,0.1)]">
       <div className="mb-2 flex items-start justify-between">
-        <span className="font-sans text-sm font-medium leading-[142.857%] text-[#09090B]">{title}</span>
+        <span className="font-sans text-sm font-medium leading-[142.857%] text-[#1b263b]">{title}</span>
         <FlagIcon fill={flagFill} />
       </div>
-      <p className="mb-3 font-sans text-xs leading-[133.333%] text-[#52525C]">{subtitle}</p>
+      <p className="mb-3 font-sans text-xs leading-[133.333%] text-[#1b263b]/70">{subtitle}</p>
       <div className="flex items-center justify-between">
         <div className="flex">
           {avatars.map((src, i) => (
@@ -72,7 +72,7 @@ function KanbanCard({
                 strokeWidth={2}
               />
             </svg>
-            <span className="font-sans text-[10px] leading-[150%] text-[#52525C]">{comments}</span>
+            <span className="font-sans text-[10px] leading-[150%] text-[#1b263b]/70">{comments}</span>
           </span>
           {attachments !== undefined && (
             <span className="flex items-center gap-0.5">
@@ -92,7 +92,7 @@ function KanbanCard({
                   strokeLinecap="round"
                 />
               </svg>
-              <span className="font-sans text-[10px] leading-[150%] text-[#52525C]">{attachments}</span>
+              <span className="font-sans text-[10px] leading-[150%] text-[#1b263b]/70">{attachments}</span>
             </span>
           )}
         </div>
@@ -110,7 +110,7 @@ export function PaperStepKanban3MS() {
           <div className="mb-2 flex items-center justify-between px-2 pt-1">
             <div className="flex items-center gap-2">
               <span className="size-2 shrink-0 rounded-full bg-[oklch(76.9%_0.188_70.1)]" />
-              <span className="font-sans text-sm font-semibold leading-[142.857%] text-[#09090B]">In Arbeit</span>
+              <span className="font-sans text-sm font-semibold leading-[142.857%] text-[#1b263b]">In Arbeit</span>
             </div>
             <svg width={16} height={16} viewBox="0 0 24 24" className="shrink-0" aria-hidden>
               <circle cx={12} cy={12} r={1} fill="none" stroke="oklch(44.2% 0.017 285.8)" strokeWidth={2} />

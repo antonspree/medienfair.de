@@ -33,7 +33,8 @@ export function IconLogoMark({
   className?: string;
   variant?: "light" | "dark";
 }) {
-  const shield = variant === "dark" ? "#141414" : "#FFFFFF";
+  const shield = variant === "dark" ? "#1b263b" : "#FFFFFF";
+  const chevron = variant === "dark" ? "#FFFFFF" : "#1b263b";
   return (
     <svg
       width={42}
@@ -49,7 +50,7 @@ export function IconLogoMark({
       <path
         d="M8.5 18.5L21 27L33.5 18.5"
         fill="none"
-        stroke="#000000"
+        stroke={chevron}
         strokeWidth={7}
         strokeLinecap="round"
       />
@@ -87,13 +88,13 @@ export function IconChevronRight({ className, stroke = "currentColor" }: IconPro
   );
 }
 
-export function IconChevronFaq({ className }: IconProps) {
+export function IconChevronFaq({ className, stroke = "#918DF6" }: IconProps) {
   return (
     <IconBase className={cn("translate-y-0.5", className)}>
       <path
         d="M4 6L8 10L12 6"
         fill="none"
-        stroke="#918DF6"
+        stroke={stroke}
         strokeWidth={2}
         strokeLinecap="round"
         strokeLinejoin="round"

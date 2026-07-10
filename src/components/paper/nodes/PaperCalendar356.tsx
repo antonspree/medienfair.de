@@ -7,15 +7,15 @@ export function PaperCalendar356() {
       <div className="min-w-[288px] rounded-2xl bg-white p-3 [box-shadow:#00000013_0px_0px_0px_1px,#00000011_0px_10px_15px_-3px,#00000011_0px_4px_6px_-4px]">
         <div className="mb-3 flex items-start justify-between px-1">
           <div>
-            <p className="mb-0.5 font-sans text-base font-semibold text-[#09090B]">Dienstag</p>
-            <p className="font-sans text-xs text-[#52525C]">29. Januar 2026</p>
+            <p className="mb-0.5 font-sans text-base font-semibold text-[#1b263b]">Dienstag</p>
+            <p className="font-sans text-xs text-[#1b263b]/70">29. Januar 2026</p>
           </div>
           <span className="flex items-center gap-1.5 rounded-full bg-[#09090B0D] py-1 pr-2.5 pl-1.5">
             <svg xmlns="http://www.w3.org/2000/svg" width={12} height={12} viewBox="0 0 24 24" className="opacity-50" aria-hidden>
               <circle cx="12" cy="12" r="10" fill="none" stroke="oklch(14.1% 0.005 285.9)" strokeWidth={2} />
               <polyline points="12 6 12 12 16 14" fill="none" stroke="oklch(14.1% 0.005 285.9)" strokeWidth={2} />
             </svg>
-            <span className="font-sans text-xs font-medium text-[#09090B]">Tag</span>
+            <span className="font-sans text-xs font-medium text-[#1b263b]">Tag</span>
           </span>
         </div>
         {[
@@ -54,7 +54,7 @@ export function PaperCalendar356() {
           },
         ].map((row) => (
           <div key={row.time} className="flex gap-3">
-            <div className="w-10 shrink-0 py-2 text-right font-sans text-xs text-[#52525C]">{row.time}</div>
+            <div className="w-10 shrink-0 py-2 text-right font-sans text-xs text-[#1b263b]/70">{row.time}</div>
             <div className="relative grow border-t border-t-solid border-t-[#09090B0A] py-2">
               {row.event && (
                 <div

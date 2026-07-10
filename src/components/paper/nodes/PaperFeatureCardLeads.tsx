@@ -14,7 +14,7 @@ export function PaperFeatureCardLeads() {
         </span>
         <div className="flex max-w-[288px] flex-col gap-0.5">
           <p className="font-['Inter',system-ui,sans-serif] text-2xl/7 font-medium text-[#FFA600]">Qualifizierte Anfragen</p>
-          <p className="font-['Inter',system-ui,sans-serif] text-2xl/7 font-medium text-[#181925]">
+          <p className="font-['Inter',system-ui,sans-serif] text-2xl/7 font-medium text-[#1b263b]">
             Damit nur noch passende Interessenten bei dir ankommen.
           </p>
         </div>
@@ -46,14 +46,14 @@ export function PaperFeatureCardLeads() {
               <svg width={16} height={16} viewBox="0 0 16 16" className="shrink-0" aria-hidden>
                 {row.icon}
               </svg>
-              <span className="font-['Inter',system-ui,sans-serif] text-sm font-medium leading-[142.857%] text-[#181925]">{row.label}</span>
+              <span className="font-['Inter',system-ui,sans-serif] text-sm font-medium leading-[142.857%] text-[#1b263b]">{row.label}</span>
             </div>
           ))}
         </div>
         <a href="/leistungen/qualifizierung" className={featureCardCtaClass}>
-          <span className="font-['Inter',system-ui,sans-serif] text-sm font-medium leading-[142.857%] text-[#181925]">Mehr erfahren</span>
+          <span className="font-['Inter',system-ui,sans-serif] text-sm font-medium leading-[142.857%] text-[#1b263b]">Mehr erfahren</span>
           <svg width={16} height={16} viewBox="0 0 16 16" className="shrink-0" aria-hidden>
-            <path d="M6 12L10 8L6 4" fill="none" stroke="#181925" strokeWidth={1.25} strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M6 12L10 8L6 4" fill="none" stroke="#1b263b" strokeWidth={1.25} strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </a>
       </div>
@@ -76,13 +76,13 @@ export function PaperFeatureCardLeads() {
             </span>
             <div className="relative">
               <div className="mb-3">
-                <p className="font-sans text-sm font-medium leading-[142.857%] text-[#09090B]">Neuer Abschluss</p>
-                <p className="w-[194px] font-sans text-xs leading-[133.333%] text-[#52525C]">
+                <p className="font-sans text-sm font-medium leading-[142.857%] text-[#1b263b]">Neuer Abschluss</p>
+                <p className="w-[194px] font-sans text-xs leading-[133.333%] text-[#1b263b]/70">
                   Glückwunsch! Soeben wurde ein neuer Abschluss gemacht.
                 </p>
               </div>
               <span className="inline-flex h-7 items-center justify-center gap-2 rounded-lg border border-solid border-transparent bg-white px-3 shadow-[0_0_0_1px_rgba(9,9,11,0.1),0_1px_3px_rgba(0,0,0,0.1),0_1px_2px_-1px_rgba(0,0,0,0.1)]">
-                <span className="font-sans text-xs font-medium leading-[133.333%] text-[#09090B]">Ansehen</span>
+                <span className="font-sans text-xs font-medium leading-[133.333%] text-[#1b263b]">Ansehen</span>
               </span>
             </div>
           </div>

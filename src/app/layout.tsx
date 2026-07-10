@@ -11,7 +11,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Medienfair – Planbar Kunden und Partner gewinnen",
   description:
-    "Klare Systeme für Finanzberater – für mehr Sichtbarkeit, Vertrauen und qualifizierte Anfragen.",
+    "Klare Systeme für Unternehmen – für mehr Sichtbarkeit, Vertrauen und qualifizierte Anfragen.",
   icons: {
     icon: "/svg/logo.svg",
   },
@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de" className={`${inter.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-white text-[#141414]">
+      <body className="min-h-full flex flex-col bg-white text-[#1b263b]">
         {children}
       </body>
     </html>

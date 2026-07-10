@@ -17,21 +17,21 @@ export function ProcessSection() {
     <section className={`flex flex-col gap-12 overflow-hidden py-16 ${fontInter}`}>
       <Reveal className="mx-auto flex w-full max-w-3xl flex-col items-center gap-[13px] px-5 text-center">
         <SectionBadge>System ansehen</SectionBadge>
-        <h2 className="max-w-md text-3xl font-medium leading-tight text-[#181925] sm:text-4xl">
+        <h2 className="max-w-md text-3xl font-medium leading-tight text-[#1b263b] sm:text-4xl">
           Digitaler Vertriebsprozess
         </h2>
-        <p className="max-w-sm text-base font-medium leading-5 text-[#666666]">
+        <p className="max-w-sm text-base font-medium leading-5 text-[#1b263b]/70">
           Vom ersten Eindruck bis zur qualifizierten Anfrage – alles aus einem Guss, ohne
           verwirrende Pakete.
         </p>
       </Reveal>
 
       <Reveal className="mx-auto w-full max-w-5xl px-5">
-        <div className="grid overflow-hidden rounded-2xl bg-black/[0.03] lg:grid-cols-2">
+        <div className="grid overflow-hidden rounded-2xl bg-[#FAFAFA] lg:grid-cols-2">
           <div className="flex flex-col gap-10 border-black/[0.05] p-6 sm:p-8 lg:border-r">
             <div className="flex items-start justify-between gap-2">
               <div className="flex min-w-0 flex-col gap-1">
-                <h3 className="font-['Inter',system-ui,sans-serif] text-base font-medium leading-[150%] text-[#181925]">
+                <h3 className="font-['Inter',system-ui,sans-serif] text-base font-medium leading-[150%] text-[#1b263b]">
                   Das System
                 </h3>
                 <p className="max-w-64 font-['Inter',system-ui,sans-serif] text-sm leading-[142.857%] text-[#999999]">
@@ -50,7 +50,7 @@ export function ProcessSection() {
               {PROCESS_BENEFITS.map((b) => (
                 <div key={b.label} className="flex items-center gap-2">
                   {processIcons[b.icon]}
-                  <span className="text-sm font-medium text-[#181925]">{b.label}</span>
+                  <span className="text-sm font-medium text-[#1b263b]">{b.label}</span>
                 </div>
               ))}
             </div>
@@ -66,7 +66,7 @@ export function ProcessSection() {
               <p className="text-center text-base font-medium text-[#999999]">
                 Qualifizierte Anfragen
               </p>
-              <p className="text-5xl font-semibold leading-none text-[#181925]">274</p>
+              <p className="text-5xl font-semibold leading-none text-[#1b263b]">274</p>
             </motion.div>
             <DashboardPanelIllustration />
           </div>

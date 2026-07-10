@@ -22,7 +22,7 @@ export function WissenTableOfContents({
         variant === "inline" && "w-full",
       )}
     >
-      <p className="mb-3 text-sm font-medium text-[#181925]">Auf dieser Seite</p>
+      <p className="mb-3 text-sm font-medium text-[#1b263b]">Auf dieser Seite</p>
       <ul
         className={cn(
           "flex gap-1.5",
@@ -34,9 +34,9 @@ export function WissenTableOfContents({
             <a
               href={`#${section.id}`}
               className={cn(
-                "text-sm font-medium text-[#666666] hover:text-[#181925]",
+                "text-sm font-medium text-[#1b263b]/70 hover:text-[#1b263b]",
                 variant === "inline" &&
-                  "inline-flex rounded-md bg-black/[0.05] px-2.5 py-1.5 leading-snug",
+                  "inline-flex rounded-md bg-[#FAFAFA] px-2.5 py-1.5 leading-snug",
                 variant === "sidebar" && "line-clamp-2",
               )}
             >

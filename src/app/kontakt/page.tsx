@@ -6,7 +6,7 @@ import { KontaktPageContent } from "@/components/pages/KontaktPageContent";
 export const metadata: Metadata = {
   title: "Kontakt – Medienfair",
   description:
-    "Buche dein kostenloses Erstgespräch mit Medienfair – Termin online per Calendly, unverbindlich für Finanzberater.",
+    "Buche dein kostenloses Erstgespräch mit Medienfair – Termin online per Calendly, unverbindlich für Unternehmen.",
 };
 
 export default function KontaktPage() {

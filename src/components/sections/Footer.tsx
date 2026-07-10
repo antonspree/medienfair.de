@@ -25,7 +25,7 @@ export function Footer() {
             <LogoIcon className="w-[25px]" variant="dark" />
           </Link>
           <p className="max-w-[288px] text-sm font-medium text-[#999999]">
-            Planbare Kunden- und Vertriebspartnergewinnung für Finanzberater –
+            Planbare Kunden- und Partnergewinnung für Unternehmen –
             mit Website, SEO und Meta Ads.
           </p>
           <div className="flex items-center gap-2">
@@ -42,13 +42,13 @@ export function Footer() {
 
         <div className="grid grid-cols-2 gap-x-12 gap-y-8 sm:grid-cols-3">
           <div>
-            <p className="text-sm font-medium text-[#181925]">Unternehmen</p>
+            <p className="text-sm font-medium text-[#1b263b]">Unternehmen</p>
             <ul className="mt-1 flex flex-col gap-1">
               {companyLinks.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-sm font-medium text-[#999999] hover:text-[#181925]"
+                    className="text-sm font-medium text-[#999999] hover:text-[#1b263b]"
                   >
                     {link.label}
                   </Link>
@@ -57,13 +57,13 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <p className="text-sm font-medium text-[#181925]">Leistungen</p>
+            <p className="text-sm font-medium text-[#1b263b]">Leistungen</p>
             <ul className="mt-1 flex flex-col gap-1">
               {serviceLinks.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-sm font-medium text-[#999999] hover:text-[#181925]"
+                    className="text-sm font-medium text-[#999999] hover:text-[#1b263b]"
                   >
                     {link.label}
                   </Link>
@@ -72,13 +72,13 @@ export function Footer() {
             </ul>
           </div>
           <div className="col-span-2 sm:col-span-1">
-            <p className="text-sm font-medium text-[#181925]">Rechtliches</p>
+            <p className="text-sm font-medium text-[#1b263b]">Rechtliches</p>
             <ul className="mt-1 flex flex-col gap-1">
               {legalLinks.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-sm font-medium text-[#999999] hover:text-[#181925]"
+                    className="text-sm font-medium text-[#999999] hover:text-[#1b263b]"
                   >
                     {link.label}
                   </Link>

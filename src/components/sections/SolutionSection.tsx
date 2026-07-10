@@ -23,10 +23,10 @@ export function SolutionSection() {
     <section id="leistungen" className="mx-auto flex w-full max-w-5xl flex-col gap-12 px-5 py-16">
       <Reveal className={`flex flex-col items-center gap-[13px] text-center ${fontInter}`}>
         <SectionBadge>Die Lösung</SectionBadge>
-        <h2 className="max-w-lg text-3xl font-medium leading-tight text-[#181925] sm:text-4xl sm:leading-[1.15]">
-          Alles, was Finanzberater brauchen
+        <h2 className="max-w-lg text-3xl font-medium leading-tight text-[#1b263b] sm:text-4xl sm:leading-[1.15]">
+          Alles, was Unternehmen brauchen
         </h2>
-        <p className="max-w-md text-lg font-medium leading-6 text-[#666666]">
+        <p className="max-w-md text-lg font-medium leading-6 text-[#1b263b]/70">
           Um online Vertrauen aufzubauen und qualifizierte Anfragen und Partner zu gewinnen.
         </p>
         <Button href="#kontakt">Analyse anfragen</Button>

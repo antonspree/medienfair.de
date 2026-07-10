@@ -21,9 +21,9 @@ export function WissenShell({ children, tocSections }: WissenShellProps) {
 
   return (
     <div
-      className={`flex min-h-dvh flex-col bg-[#F5F5F5] p-1.5 antialiased [font-synthesis:none] lg:h-dvh lg:overflow-hidden ${fontInter}`}
+      className={`flex min-h-dvh flex-col bg-[#FAFAFA] p-1.5 antialiased [font-synthesis:none] lg:h-dvh lg:overflow-hidden ${fontInter}`}
     >
-      <div className="mb-1.5 flex items-center justify-between gap-3 rounded-xl bg-[#F5F5F5] px-3 py-2.5 lg:hidden">
+      <div className="mb-1.5 flex items-center justify-between gap-3 rounded-xl bg-[#FAFAFA] px-3 py-2.5 lg:hidden">
         <Link href="/" className="flex items-center gap-2.5" aria-label="Zur Startseite">
           <LogoIcon className="w-[25px]" variant="dark" />
           <span className="inline-flex h-[18px] items-center justify-center rounded-sm border border-transparent bg-white px-1 text-xs font-medium text-[#999999] shadow-[0_1px_1px_rgba(0,0,0,0.08),0_0_0_1px_rgba(0,0,0,0.05)]">
@@ -33,7 +33,7 @@ export function WissenShell({ children, tocSections }: WissenShellProps) {
         <button
           type="button"
           onClick={() => setNavOpen(true)}
-          className="inline-flex h-9 items-center justify-center rounded-lg bg-white px-3 text-sm font-medium text-[#181925] shadow-[0_1px_1px_rgba(0,0,0,0.08),0_0_0_1px_rgba(0,0,0,0.05)]"
+          className="inline-flex h-9 items-center justify-center rounded-lg bg-white px-3 text-sm font-medium text-[#1b263b] shadow-[0_1px_1px_rgba(0,0,0,0.08),0_0_0_1px_rgba(0,0,0,0.05)]"
         >
           Inhalte
         </button>
@@ -56,16 +56,16 @@ export function WissenShell({ children, tocSections }: WissenShellProps) {
               animate={{ x: 0 }}
               exit={{ x: "-100%" }}
               transition={{ type: "tween", duration: 0.22 }}
-              className="fixed inset-y-0 left-0 z-50 w-[min(100%,17.5rem)] bg-[#F5F5F5] shadow-xl lg:hidden"
+              className="fixed inset-y-0 left-0 z-50 w-[min(100%,17.5rem)] bg-[#FAFAFA] shadow-xl lg:hidden"
             >
               <div className="flex h-full flex-col">
                 <div className="flex items-center justify-between border-b border-black/[0.05] px-4 py-3">
-                  <span className="text-sm font-medium text-[#181925]">Inhaltsverzeichnis</span>
+                  <span className="text-sm font-medium text-[#1b263b]">Inhaltsverzeichnis</span>
                   <button
                     type="button"
                     aria-label="Schließen"
                     onClick={closeNav}
-                    className="flex size-8 items-center justify-center rounded-lg text-[#666666] hover:bg-black/[0.04]"
+                    className="flex size-8 items-center justify-center rounded-lg text-[#1b263b]/70 hover:bg-[#FAFAFA]"
                   >
                     <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden>
                       <path
@@ -85,7 +85,7 @@ export function WissenShell({ children, tocSections }: WissenShellProps) {
       </AnimatePresence>
 
       <div className="flex min-h-0 flex-1 flex-col lg:flex-row">
-        <div className="hidden min-h-0 shrink-0 flex-col border-r border-black/[0.05] bg-[#F5F5F5] lg:flex lg:h-full lg:w-56">
+        <div className="hidden min-h-0 shrink-0 flex-col border-r border-black/[0.05] bg-[#FAFAFA] lg:flex lg:h-full lg:w-56">
           <WissenSidebar />
         </div>
 

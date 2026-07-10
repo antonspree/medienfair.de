@@ -6,10 +6,10 @@ export function PaperLegalCard() {
     <div className="rounded-2xl bg-[#00000008] antialiased [font-synthesis:none]">
       <div className="flex items-center justify-between gap-3 px-8 py-6">
         <div className="flex flex-col gap-1">
-          <p className="font-['Inter',system-ui,sans-serif] text-lg font-medium leading-[155.556%] text-[#181925]">
+          <p className="font-['Inter',system-ui,sans-serif] text-lg font-medium leading-[155.556%] text-[#1b263b]">
             Seriös & rechtlich sauber
           </p>
-          <p className="max-w-[288px] font-['Inter',system-ui,sans-serif] text-base leading-[150%] text-[#666666]">
+          <p className="max-w-[288px] font-['Inter',system-ui,sans-serif] text-base leading-[150%] text-[#1b263b]/70">
             Datenschutz, Impressum, Consent und Anfrageprozesse werden von Anfang an sauber mitgedacht.
           </p>
         </div>

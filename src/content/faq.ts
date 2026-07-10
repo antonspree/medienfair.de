@@ -17,13 +17,13 @@ export const homepageFaqItems: FaqItem[] = [
     id: "home-1",
     question: "Für wen ist das Angebot von Medienfair gedacht?",
     answer:
-      "Für Finanzberater und Finanzdienstleister, die online klar positioniert sein und planbar qualifizierte Anfragen oder Partner gewinnen wollen – nicht nur eine statische Visitenkarten-Website.",
+      "Für Unternehmen und KMUs, die online klar positioniert sein und planbar qualifizierte Anfragen oder Partner gewinnen wollen – nicht nur eine statische Visitenkarten-Website.",
   },
   {
     id: "home-2",
     question: "Ist die Umsetzung DSGVO-konform?",
     answer:
-      "Ja. Datenschutz, Impressum, Cookie-Einwilligung und saubere Kontakt- sowie Anfrageprozesse werden von Anfang an mitgedacht – besonders wichtig im Finanzbereich.",
+      "Ja. Datenschutz, Impressum, Cookie-Einwilligung und saubere Kontakt- sowie Anfrageprozesse werden von Anfang an mitgedacht – besonders wichtig im Geschäftsalltag.",
   },
   {
     id: "home-3",
@@ -53,7 +53,7 @@ export const homepageFaqItems: FaqItem[] = [
     id: "home-7",
     question: "Was ist alles im System enthalten?",
     answer:
-      "Je nach Setup: klare Positionierung, verkaufsstarke Website, SEO-Grundlagen, DSGVO-relevante Seiten, Anfrage- und Terminlogik sowie optional Meta Ads – abgestimmt auf Finanzberater.",
+      "Je nach Setup: klare Positionierung, verkaufsstarke Website, SEO-Grundlagen, DSGVO-relevante Seiten, Anfrage- und Terminlogik sowie optional Meta Ads – abgestimmt auf Unternehmen und KMUs.",
   },
   {
     id: "home-8",
@@ -79,7 +79,7 @@ export const faqCategories: FaqCategory[] = [
         id: "allg-1",
         question: "Für wen ist Medienfair das Richtige?",
         answer:
-          "Für Finanzberater, Vermögensberater und Finanzdienstleister, die online professionell auftreten und planbar qualifizierte Anfragen oder Vertriebspartner gewinnen wollen – mit einem System statt Einzelmaßnahmen.",
+          "Für Unternehmen und KMUs, die online professionell auftreten und planbar qualifizierte Anfragen oder Partner und Mitarbeiter gewinnen wollen – mit einem System statt Einzelmaßnahmen.",
       },
       {
         id: "allg-2",
@@ -109,7 +109,7 @@ export const faqCategories: FaqCategory[] = [
         id: "allg-6",
         question: "Kann ich auch Partner statt Endkunden gewinnen?",
         answer:
-          "Ja. Viele Berater wollen Vertriebspartner oder Kooperationen. Im System legen wir fest, welche Zielgruppe, Botschaft und Kanäle dafür passen.",
+          "Ja. Viele Unternehmen wollen Partner oder Kooperationen. Im System legen wir fest, welche Zielgruppe, Botschaft und Kanäle dafür passen.",
       },
     ],
   },
@@ -128,7 +128,7 @@ export const faqCategories: FaqCategory[] = [
         id: "pos-2",
         question: "Schreibt ihr die Texte mit?",
         answer:
-          "Ja. Wir entwickeln Inhalte, die zu deiner Positionierung und Zielgruppe passen – verständlich, seriös und ohne Marketing-Floskeln, die im Finanzbereich vertrauen kosten.",
+          "Ja. Wir entwickeln Inhalte, die zu deiner Positionierung und Zielgruppe passen – verständlich, seriös und ohne Marketing-Floskeln, die im Geschäftsalltag vertrauen kosten.",
       },
       {
         id: "pos-3",
@@ -138,7 +138,7 @@ export const faqCategories: FaqCategory[] = [
       },
       {
         id: "pos-4",
-        question: "Wie sieht eine „verkaufsstarke“ Website für Berater aus?",
+        question: "Wie sieht eine „verkaufsstarke“ Website für Unternehmen aus?",
         answer:
           "Klare Hierarchie, Vertrauenssignale, konkrete Leistungen, eindeutige nächste Schritte (Anfrage, Termin) und Inhalte, die deine Zielgruppe wiedererkennt – nicht nur schöne Bilder.",
       },
@@ -163,7 +163,7 @@ export const faqCategories: FaqCategory[] = [
     items: [
       {
         id: "seo-1",
-        question: "Lohnt sich SEO für Finanzberater?",
+        question: "Lohnt sich SEO für Unternehmen?",
         answer:
           "Ja, wenn du lokal oder thematisch gefunden werden willst. SEO baut langfristig Sichtbarkeit auf – besonders sinnvoll, wenn du nicht dauerhaft nur auf Ads angewiesen sein willst.",
       },
@@ -276,13 +276,13 @@ export const faqCategories: FaqCategory[] = [
   {
     id: "technik",
     title: "Technik, DSGVO & Rechtliches",
-    description: "Sichere Umsetzung und Vertrauen im Finanzbereich.",
+    description: "Sichere Umsetzung und Vertrauen im Geschäftsalltag.",
     items: [
       {
         id: "tech-1",
         question: "Ist die Umsetzung DSGVO-konform?",
         answer:
-          "Ja. Datenschutzerklärung, Impressum, Cookie-Einwilligung und saubere Formularprozesse gehören dazu. Im Finanzbereich ist das Pflicht – wir behandeln es nicht als Nachgedanke.",
+          "Ja. Datenschutzerklärung, Impressum, Cookie-Einwilligung und saubere Formularprozesse gehören dazu. Im Geschäftsalltag ist das Pflicht – wir behandeln es nicht als Nachgedanke.",
       },
       {
         id: "tech-2",
@@ -304,7 +304,7 @@ export const faqCategories: FaqCategory[] = [
       },
       {
         id: "tech-5",
-        question: "Brauche ich spezielle Hinweise für Finanzprodukte?",
+        question: "Brauche ich spezielle Hinweise für Produkte und Dienstleistungen?",
         answer:
           "Ja, Seriosität und rechtliche Vorgaben sind zentral. Wir achten auf klare Formulierungen und vermeiden irreführende Versprechen – Details besprechen wir mit dir.",
       },
@@ -364,5 +364,5 @@ export const faqCategories: FaqCategory[] = [
 export const faqPageMeta = {
   title: "FAQ – Medienfair",
   description:
-    "Antworten zu Positionierung, Website, SEO, Meta Ads, Prozess, DSGVO und Kosten – für Finanzberater, die online planbar wachsen wollen.",
+    "Antworten zu Positionierung, Website, SEO, Meta Ads, Prozess, DSGVO und Kosten – für Unternehmen, die online planbar wachsen wollen.",
 };

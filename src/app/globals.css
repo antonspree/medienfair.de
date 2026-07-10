@@ -2,16 +2,17 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #141414;
-  --muted: #666666;
+  --foreground: #1b263b;
+  --muted: #1b263b;
   --muted-light: #999999;
   --border: rgba(0, 0, 0, 0.05);
-  --surface: rgba(0, 0, 0, 0.03);
-  --primary: #4562d7;
+  --surface: #fafafa;
+  --primary: #fca311;
+  --primary-hover: #e8940f;
   --primary-blue: #2c78fc;
   --accent-green: #33c758;
   --accent-red: #ec6b5c;
-  --ink: #181925;
+  --ink: #1b263b;
   --nav-bg: #141414;
   --nav-text: #bbbcc3;
 }

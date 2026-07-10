@@ -70,7 +70,7 @@ export function LeistungenMegaMenu({ onNavigate, className }: LeistungenMegaMenu
             key={item.title}
             href={item.href}
             onClick={onNavigate}
-            className="flex min-h-[132px] flex-col items-center justify-center gap-3 rounded-2xl px-3 py-5 transition-[filter] hover:brightness-110"
+            className="flex min-h-[132px] flex-col items-center justify-center gap-3 rounded-2xl px-3 py-5 transition-[filter] hover:brightness-[0.98]"
             style={{ backgroundColor: item.cardBg }}
           >
             <span
@@ -82,8 +82,8 @@ export function LeistungenMegaMenu({ onNavigate, className }: LeistungenMegaMenu
               </svg>
             </span>
             <div className="flex flex-col items-center gap-0.5 text-center">
-              <span className="text-sm font-medium text-white">{item.title}</span>
-              <span className="text-xs font-medium leading-snug text-[#9CA3AF]">
+              <span className="text-sm font-medium text-[#1b263b]">{item.title}</span>
+              <span className="text-xs font-medium leading-snug text-[#1b263b]/65">
                 {item.subtitle}
               </span>
             </div>
@@ -99,14 +99,14 @@ export function LeistungenMegaMenu({ onNavigate, className }: LeistungenMegaMenu
           {leistungenMegaMenuMoreLinks.map((link, index) => (
             <span key={link.href} className="inline-flex items-center gap-1.5">
               {index > 0 && (
-                <span className="text-[#555555]" aria-hidden>
+                <span className="text-white/30" aria-hidden>
                   ·
                 </span>
               )}
               <Link
                 href={link.href}
                 onClick={onNavigate}
-                className="text-xs font-medium text-[#BBBCC3] transition-colors hover:text-white"
+                className="text-xs font-medium text-white/70 transition-colors hover:text-white"
               >
                 {link.label}
               </Link>
@@ -118,7 +118,7 @@ export function LeistungenMegaMenu({ onNavigate, className }: LeistungenMegaMenu
       <Link
         href="/#leistungen"
         onClick={onNavigate}
-        className="rounded-xl px-2 py-1 text-center text-xs font-medium text-[#888888] transition-colors hover:text-[#BBBCC3]"
+        className="rounded-xl px-2 py-1 text-center text-xs font-medium text-white/60 transition-colors hover:text-white"
       >
         Alle Leistungen auf der Startseite
       </Link>

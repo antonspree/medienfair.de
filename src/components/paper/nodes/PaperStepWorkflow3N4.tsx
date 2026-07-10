@@ -22,7 +22,7 @@ export function PaperStepWorkflow3N4() {
         <div className="absolute inset-x-9 top-2 bottom-4 h-85 w-74 rounded-2xl bg-[#FFFFFFBF] shadow-[0_0_0_1px_rgba(0,0,0,0.075)]" />
         <div className="absolute inset-x-6 inset-y-4 h-83 w-[320px] rounded-2xl bg-white shadow-[0_0_0_1px_rgba(0,0,0,0.075)] backdrop-blur-sm" />
         <div className="relative rounded-t-2xl bg-white p-6 shadow-[0_0_0_1px_rgba(0,0,0,0.075),0_10px_15px_-3px_rgba(0,0,0,0.067),0_4px_6px_-4px_rgba(0,0,0,0.067)]">
-          <p className="font-sans text-base font-medium leading-[150%] text-[#09090B]">Workflow</p>
+          <p className="font-sans text-base font-medium leading-[150%] text-[#1b263b]">Workflow</p>
           <div className="mt-4">
             <div className="mb-0.5 flex items-center gap-3">
               <StepIcon>
@@ -32,8 +32,8 @@ export function PaperStepWorkflow3N4() {
                 </svg>
               </StepIcon>
               <div className="min-w-0 grow basis-0">
-                <p className="mb-1 font-sans text-sm font-medium leading-[142.857%] text-[#09090B]">Veröffentlichung</p>
-                <p className="font-sans text-xs leading-[133.333%] text-[#52525C]">Deployment Homepage</p>
+                <p className="mb-1 font-sans text-sm font-medium leading-[142.857%] text-[#1b263b]">Veröffentlichung</p>
+                <p className="font-sans text-xs leading-[133.333%] text-[#1b263b]/70">Deployment Homepage</p>
               </div>
               <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-[oklab(69.6%_-0.162_0.051/10%)]">
                 <svg width={14} height={14} viewBox="0 0 24 24" aria-hidden>
@@ -51,8 +51,8 @@ export function PaperStepWorkflow3N4() {
                 </svg>
               </StepIcon>
               <div className="min-w-0 grow basis-0">
-                <p className="mb-1 font-sans text-sm font-medium leading-[142.857%] text-[#09090B]">Testing</p>
-                <p className="font-sans text-xs leading-[133.333%] text-[#52525C]">Searching vector database</p>
+                <p className="mb-1 font-sans text-sm font-medium leading-[142.857%] text-[#1b263b]">Testing</p>
+                <p className="font-sans text-xs leading-[133.333%] text-[#1b263b]/70">Searching vector database</p>
               </div>
               <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-[oklab(62.3%_-0.038_-0.211/10%)] opacity-[0.72]">
                 <svg
@@ -93,11 +93,11 @@ export function PaperStepWorkflow3N4() {
                 </svg>
               </StepIcon>
               <div className="min-w-0 grow basis-0">
-                <p className="mb-1 font-sans text-sm font-medium leading-[142.857%] text-[#09090B]">Response Generation</p>
-                <p className="line-clamp-1 font-sans text-xs leading-[133.333%] text-[#52525C]">Run inference with context</p>
+                <p className="mb-1 font-sans text-sm font-medium leading-[142.857%] text-[#1b263b]">Response Generation</p>
+                <p className="line-clamp-1 font-sans text-xs leading-[133.333%] text-[#1b263b]/70">Run inference with context</p>
               </div>
               <span className="shrink-0 rounded-full bg-[#09090B0D] px-2 py-0.5">
-                <span className="font-sans text-xs leading-[133.333%] text-[#52525C]">Pending</span>
+                <span className="font-sans text-xs leading-[133.333%] text-[#1b263b]/70">Pending</span>
               </span>
             </div>
           </div>

@@ -6,11 +6,11 @@ export function PaperAddonCard() {
     <div className="rounded-2xl bg-[#00000008] antialiased [font-synthesis:none]">
       <div className="flex items-center justify-between gap-3 px-8 py-6">
         <div className="flex flex-col gap-1">
-          <p className="font-['Inter',system-ui,sans-serif] text-lg font-medium leading-[155.556%] text-[#181925]">
+          <p className="font-['Inter',system-ui,sans-serif] text-lg font-medium leading-[155.556%] text-[#1b263b]">
             Zusatz
           </p>
-          <p className="max-w-[288px] font-['Inter',system-ui,sans-serif] text-base leading-[150%] text-[#666666]">
-            Website, SEO und Meta Ads aus einer Hand – abgestimmt auf Finanzberater.
+          <p className="max-w-[288px] font-['Inter',system-ui,sans-serif] text-base leading-[150%] text-[#1b263b]/70">
+            Website, SEO und Meta Ads aus einer Hand – abgestimmt auf Unternehmen und KMUs.
           </p>
         </div>
         <div className="flex items-center justify-center">

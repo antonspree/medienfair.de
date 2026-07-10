@@ -28,7 +28,7 @@ export function WissenSidebar({ onNavigate }: WissenSidebarProps) {
         </Link>
 
         <div className="flex flex-col gap-1.5">
-          <p className="text-sm font-medium text-black/40">Start</p>
+          <p className="text-sm font-medium text-[#1b263b]/40">Start</p>
           <ul className="flex flex-col">
             <li>
               <Link
@@ -36,7 +36,7 @@ export function WissenSidebar({ onNavigate }: WissenSidebarProps) {
                 onClick={onNavigate}
                 className={cn(
                   "mb-1 flex h-6 items-center gap-2 text-sm font-medium",
-                  pathname === "/wissen" ? "text-[#181925]" : "text-[#666666] hover:text-[#181925]",
+                  pathname === "/wissen" ? "text-[#1b263b]" : "text-[#1b263b]/70 hover:text-[#1b263b]",
                 )}
               >
                 <span className="line-clamp-1">Willkommen</span>
@@ -56,7 +56,7 @@ export function WissenSidebar({ onNavigate }: WissenSidebarProps) {
           const terms = wissenTerms.filter((t) => t.categoryId === category.id);
           return (
             <div key={category.id} className="flex flex-col gap-1.5">
-              <p className="text-sm font-medium text-black/40">{category.title}</p>
+              <p className="text-sm font-medium text-[#1b263b]/40">{category.title}</p>
               <ul className="flex flex-col">
                 {terms.map((term, i) => {
                   const href = `/wissen/${term.slug}`;
@@ -68,7 +68,7 @@ export function WissenSidebar({ onNavigate }: WissenSidebarProps) {
                         onClick={onNavigate}
                         className={cn(
                           "mb-1 flex h-6 items-center gap-2 text-sm font-medium last:mb-0",
-                          active ? "text-[#181925]" : "text-[#666666] hover:text-[#181925]",
+                          active ? "text-[#1b263b]" : "text-[#1b263b]/70 hover:text-[#1b263b]",
                           i === terms.length - 1 && "mb-0",
                         )}
                       >

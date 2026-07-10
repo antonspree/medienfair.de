@@ -13,7 +13,7 @@ export function PaperVisibilityHeader() {
       </span>
       <div className="flex min-h-[4.375rem] max-w-[288px] flex-col gap-0.5">
         <p className="font-['Inter',system-ui,sans-serif] text-2xl/7 font-medium text-[#2C78FC]">Sichtbarkeit</p>
-        <p className="font-['Inter',system-ui,sans-serif] text-2xl/7 font-medium text-[#181925]">
+        <p className="font-['Inter',system-ui,sans-serif] text-2xl/7 font-medium text-[#1b263b]">
           Damit passende Interessenten dich finden,{" "}
           <span className="font-semibold">vor allen anderen.</span>
         </p>
@@ -50,14 +50,14 @@ export function PaperVisibilityHeader() {
         ].map((row) => (
           <div key={row.label} className="flex items-center gap-2">
             {row.icon}
-            <span className="font-['Inter',system-ui,sans-serif] text-sm font-medium leading-[142.857%] text-[#181925]">{row.label}</span>
+            <span className="font-['Inter',system-ui,sans-serif] text-sm font-medium leading-[142.857%] text-[#1b263b]">{row.label}</span>
           </div>
         ))}
       </div>
       <a href="/leistungen/seo" className={featureCardCtaClass}>
-        <span className="w-max shrink-0 font-['Inter',system-ui,sans-serif] text-sm font-medium leading-[142.857%] text-[#181925]">Mehr erfahren</span>
+        <span className="w-max shrink-0 font-['Inter',system-ui,sans-serif] text-sm font-medium leading-[142.857%] text-[#1b263b]">Mehr erfahren</span>
         <svg width={16} height={16} viewBox="0 0 16 16" className="shrink-0" aria-hidden>
-          <path d="M6 12L10 8L6 4" fill="none" stroke="#181925" strokeWidth={1.25} strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M6 12L10 8L6 4" fill="none" stroke="#1b263b" strokeWidth={1.25} strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </a>
     </div>

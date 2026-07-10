@@ -15,13 +15,13 @@ export function LegalPageContent({ content }: LegalPageContentProps) {
       className={`flex flex-col items-center justify-center gap-[4.5rem] bg-white pt-12 pb-16 antialiased sm:pt-16 ${fontInter}`}
     >
       <Reveal className="flex w-full max-w-[384px] flex-col items-center gap-4 px-5">
-        <h1 className="text-center text-[36px] font-medium leading-[111.111%] text-[#181925]">
+        <h1 className="text-center text-[36px] font-medium leading-[111.111%] text-[#1b263b]">
           {content.title}
         </h1>
-        <p className="max-w-[384px] text-center text-[14px] leading-[142.857%] text-[#666666]">
+        <p className="max-w-[384px] text-center text-[14px] leading-[142.857%] text-[#1b263b]/70">
           {content.description}
         </p>
-        <div className="flex h-7 shrink-0 items-center justify-center rounded-lg bg-[#F0F0F0] px-2.5">
+        <div className="flex h-7 shrink-0 items-center justify-center rounded-lg bg-[#FAFAFA] px-2.5">
           <span className="text-[14px] leading-[142.857%] text-[#999999]">
             Stand: {content.lastUpdated}
           </span>
@@ -33,14 +33,14 @@ export function LegalPageContent({ content }: LegalPageContentProps) {
           <Reveal key={section.heading ?? `intro-${index}`} delay={index * 0.03}>
             <section className="flex flex-col gap-3">
               {section.heading ? (
-                <h2 className="text-[20px] font-medium leading-[140%] tracking-[-0.35px] text-[#181925]">
+                <h2 className="text-[20px] font-medium leading-[140%] tracking-[-0.35px] text-[#1b263b]">
                   {section.heading}
                 </h2>
               ) : null}
               {section.paragraphs.map((paragraph, paragraphIndex) => (
                 <p
                   key={paragraphIndex}
-                  className="whitespace-pre-line text-[16px] leading-[150%] text-[#666666]"
+                  className="whitespace-pre-line text-[16px] leading-[150%] text-[#1b263b]/70"
                 >
                   {paragraph}
                 </p>

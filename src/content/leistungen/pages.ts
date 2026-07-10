@@ -22,7 +22,7 @@ export const leistungenPages: ServicePageContent[] = [
     slug: "positionierung",
     badge: "Positionierung",
     metaDescription:
-      "Klare Positionierung für Finanzberater: Zielgruppe, Expertenrolle und einheitliche Botschaft – damit du online nicht wie jeder andere wirkst.",
+      "Klare Positionierung für Unternehmen: Zielgruppe, Expertenrolle und einheitliche Botschaft – damit du online nicht wie jeder andere wirkst.",
     accent: "#3F8E03",
     badgeBg: "#3F8E030F",
     badgeBorder: "#3F8E0300",
@@ -30,12 +30,12 @@ export const leistungenPages: ServicePageContent[] = [
     benefitIconBg: "#33C75814",
     headline: "Damit du nicht wie jeder andere wirkst.",
     subline:
-      "Menschen entscheiden sich nicht für irgendeinen Finanzberater. Sie entscheiden sich für jemanden, der ihr Problem versteht, eine klare Lösung anbietet und online genau das transportiert.",
+      "Menschen entscheiden sich nicht für irgendein Unternehmen. Sie entscheiden sich für einen Anbieter, der ihr Problem versteht, eine klare Lösung anbietet und online genau das transportiert.",
     heroImage: "/images/pos.webp",
-    heroAlt: "Beispiel einer klar positionierten Berater-Website",
+    heroAlt: "Beispiel einer klar positionierten Unternehmens-Website",
     benefits: [
       {
-        text: "Zielgruppe mit Klarheit. Du sprichst die Menschen an, die wirklich zu dir passen – nicht „alle Finanzthemen“.",
+        text: "Zielgruppe mit Klarheit. Du sprichst die Menschen an, die wirklich zu dir passen – nicht „alle Geschäftsthemen“.",
         icon: "clock",
       },
       {
@@ -50,12 +50,12 @@ export const leistungenPages: ServicePageContent[] = [
     article: {
       title: "Positionierung, die online Vertrauen schafft.",
       intro: [
-        "Viele Finanzberater klingen online gleich: „unabhängig“, „ganzheitlich“, „individuell“. Das sind keine Positionen – das sind Floskeln.",
+        "Viele Unternehmen klingen online gleich: „unabhängig“, „ganzheitlich“, „individuell“. Das sind keine Positionen – das sind Floskeln.",
         "Gute Positionierung macht den Unterschied: Wer du anziehst, wie du wahrgenommen wirst und ob Interessenten dich als die richtige Wahl empfinden – noch bevor das erste Gespräch stattfindet.",
       ],
       sections: [
         sharedSections.howWeWork([
-          "Wir klären Zielgruppe, Anliegen und deine Rolle als Berater. Darauf bauen wir eine klare Botschaft, die sich durch Website, Texte und Angebote zieht – ohne Marketing-Buzzwords.",
+          "Wir klären Zielgruppe, Anliegen und dein Marktauftritt. Darauf bauen wir eine klare Botschaft, die sich durch Website, Texte und Angebote zieht – ohne Marketing-Buzzwords.",
           "Du bekommst keine theoretische Markenstrategie, sondern Formulierungen und Leitlinien, die du sofort einsetzen kannst.",
           "Website, SEO und Ads hängen wir erst danach auf – damit jedes Touchpoint dieselbe Position transportiert.",
         ]),
@@ -75,7 +75,7 @@ export const leistungenPages: ServicePageContent[] = [
     slug: "seo",
     badge: "SEO",
     metaDescription:
-      "Nachhaltiges SEO für Finanzberater: regional gefunden werden, relevante Suchbegriffe besetzen und qualifizierte Anfragen über Google gewinnen.",
+      "Nachhaltiges SEO für Unternehmen: regional gefunden werden, relevante Suchbegriffe besetzen und qualifizierte Anfragen über Google gewinnen.",
     accent: "#2C78FC",
     badgeBg: "#2C78FC0F",
     badgeBorder: "#2C78FC00",
@@ -83,12 +83,12 @@ export const leistungenPages: ServicePageContent[] = [
     benefitIconBg: "#2C78FC14",
     headline: "Damit dich die richtigen Menschen finden – nicht umgekehrt.",
     subline:
-      "Wer heute nach einem Finanzberater sucht, startet bei Google. SEO sorgt dafür, dass du bei den Anliegen sichtbar bist, die wirklich zu deinem Angebot passen – regional und thematisch.",
+      "Wer heute nach einer Lösung sucht, startet bei Google. SEO sorgt dafür, dass du bei den Anliegen sichtbar bist, die wirklich zu deinem Angebot passen – regional und thematisch.",
     heroImage: "/images/seo.webp",
     heroAlt: "SEO-Auswertung und Sichtbarkeit im Dashboard",
     benefits: [
       {
-        text: "Regional auffindbar. Du wirst dort gesehen, wo Interessenten nach Beratern in deiner Region suchen.",
+        text: "Regional auffindbar. Du wirst dort gesehen, wo Interessenten nach Anbietern wie dir in deiner Region suchen.",
         icon: "globe",
       },
       {
@@ -104,7 +104,7 @@ export const leistungenPages: ServicePageContent[] = [
       title: "SEO, das Anfragen bringt – nicht nur Traffic.",
       intro: [
         "Viele Websites werden gebaut und dann vergessen. Ohne SEO bleibt selbst die beste Seite für die meisten potenziellen Kunden unsichtbar.",
-        "Wir denken SEO von Anfang an mit: technische Basis, klare Struktur, Inhalte mit Suchintention und lokaler Relevanz – abgestimmt auf Finanzberater.",
+        "Wir denken SEO von Anfang an mit: technische Basis, klare Struktur, Inhalte mit Suchintention und lokaler Relevanz – abgestimmt auf Unternehmen und KMUs.",
       ],
       sections: [
         sharedSections.howWeWork([
@@ -129,7 +129,7 @@ export const leistungenPages: ServicePageContent[] = [
     slug: "meta-ads",
     badge: "Meta Ads",
     metaDescription:
-      "Meta Ads für Finanzberater: zielgerichtete Kampagnen auf Facebook und Instagram für qualifizierte Anfragen und planbare Reichweite.",
+      "Meta Ads für Unternehmen: zielgerichtete Kampagnen auf Facebook und Instagram für qualifizierte Anfragen und planbare Reichweite.",
     accent: "#4562D7",
     badgeBg: "#4562D70F",
     badgeBorder: "#4562D700",
@@ -168,7 +168,7 @@ export const leistungenPages: ServicePageContent[] = [
         ]),
         sharedSections.whatYouGet([
           "Kampagnen-Setup für Facebook und Instagram inkl. Tracking.",
-          "Anzeigen und Zielseiten, die zu Finanzberatern passen – seriös, verständlich, ohne reißerische Versprechen.",
+          "Anzeigen und Zielseiten, die zu Unternehmen passen – seriös, verständlich, ohne reißerische Versprechen.",
           "Auswertung mit Fokus auf Anfragen und Gesprächsqualität.",
           "Abstimmung mit SEO und Website für einen gemeinsamen Funnel.",
         ]),
@@ -183,7 +183,7 @@ export const leistungenPages: ServicePageContent[] = [
     slug: "content",
     badge: "Content",
     metaDescription:
-      "Content-Erstellung für Finanzberater: professionelle Foto- und Videoproduktion für Website, Ads und Social Media – authentisch und vertrauenswürdig.",
+      "Content-Erstellung für Unternehmen: professionelle Foto- und Videoproduktion für Website, Ads und Social Media – authentisch und vertrauenswürdig.",
     accent: "#7C3AED",
     badgeBg: "#7C3AED0F",
     badgeBorder: "#7C3AED00",
@@ -193,7 +193,7 @@ export const leistungenPages: ServicePageContent[] = [
     subline:
       "Texte allein reichen selten. Professionelle Fotos und Videos machen dich greifbar, schaffen Vertrauen und heben dich von generischen Stock-Bildern ab.",
     heroImage: "/images/video.png",
-    heroAlt: "Professioneller Content für Finanzberater",
+    heroAlt: "Professioneller Content für Unternehmen",
     benefits: [
       {
         text: "Authentische Aufnahmen. Du wirkst wie du – nicht wie ein anonymes Stock-Foto.",
@@ -211,7 +211,7 @@ export const leistungenPages: ServicePageContent[] = [
     article: {
       title: "Content, der Vertrauen sichtbar macht.",
       intro: [
-        "Im Finanzbereich zählt Seriosität. Schlechte oder beliebige Bilder untergraben selbst eine starke Positionierung.",
+        "Im Geschäftsalltag zählt Seriosität. Schlechte oder beliebige Bilder untergraben selbst eine starke Positionierung.",
         "Wir produzieren Foto und Video für deinen Online-Auftritt – vom Porträt bis zum Erklärvideo, abgestimmt auf deine Zielgruppe und Kanäle.",
       ],
       sections: [
@@ -237,7 +237,7 @@ export const leistungenPages: ServicePageContent[] = [
     slug: "crm",
     badge: "CRM",
     metaDescription:
-      "CRM für Finanzberater: Anfragen, Kontakte und Follow-ups strukturiert – nichts geht verloren, der Vertrieb wird planbar.",
+      "CRM für Unternehmen: Anfragen, Kontakte und Follow-ups strukturiert – nichts geht verloren, der Vertrieb wird planbar.",
     accent: "#6366F1",
     badgeBg: "#6366F10F",
     badgeBorder: "#6366F100",
@@ -263,7 +263,7 @@ export const leistungenPages: ServicePageContent[] = [
       },
     ],
     article: {
-      title: "CRM, das zu deinem Alltag als Berater passt.",
+      title: "CRM, das zu deinem Alltag passt.",
       intro: [
         "Excel-Listen und Post-it-Notizen skalieren nicht. Wer wächst, braucht ein System, das Anfragen festhält und Follow-ups erleichtert.",
         "Wir richten CRM so ein, dass es zu deinen Prozessen passt – schlank, verständlich und ohne unnötige Komplexität.",
@@ -275,7 +275,7 @@ export const leistungenPages: ServicePageContent[] = [
           "Website, Formulare und Ads können direkt angebunden werden – damit Leads automatisch ankommen.",
         ]),
         sharedSections.whatYouGet([
-          "Eingerichtetes CRM mit Pipeline, die zu Finanzberatern passt.",
+          "Eingerichtetes CRM mit Pipeline, die zu Unternehmen passt.",
           "Anbindung von Anfrageformularen und relevanten Quellen.",
           "Vorlagen für Follow-ups und Status, die jeder im Team versteht.",
           "Kurze Einweisung, damit du das System wirklich nutzt.",
@@ -291,7 +291,7 @@ export const leistungenPages: ServicePageContent[] = [
     slug: "qualifizierung",
     badge: "Qualifizierung",
     metaDescription:
-      "Anfragen-Qualifizierung für Finanzberater: vor dem Gespräch filtern, passende Interessenten priorisieren und Termine effizienter nutzen.",
+      "Anfragen-Qualifizierung für Unternehmen: vor dem Gespräch filtern, passende Interessenten priorisieren und Termine effizienter nutzen.",
     accent: "#FFA600",
     badgeBg: "#FFA6000F",
     badgeBorder: "#FFA60000",
@@ -345,7 +345,7 @@ export const leistungenPages: ServicePageContent[] = [
     slug: "recruiting",
     badge: "Recruiting",
     metaDescription:
-      "Recruiting für Finanzberater und Teams: planbar Vertriebspartner und Mitarbeiter gewinnen – mit klarem Auftritt und passenden Kanälen.",
+      "Recruiting für Unternehmen und Teams: planbar Partner und Mitarbeiter gewinnen – mit klarem Auftritt und passenden Kanälen.",
     accent: "#0EA5E9",
     badgeBg: "#0EA5E90F",
     badgeBorder: "#0EA5E900",
@@ -353,9 +353,9 @@ export const leistungenPages: ServicePageContent[] = [
     benefitIconBg: "#0EA5E914",
     headline: "Das richtige Team – nicht irgendeiner Bewerber.",
     subline:
-      "Wer wachsen will, braucht passende Vertriebspartner. Recruiting bringt dein Angebot als Arbeitgeber und Partnergeber online auf den Punkt – damit die richtigen Menschen sich melden.",
+      "Wer wachsen will, braucht passende Partner. Recruiting bringt dein Angebot als Arbeitgeber und Partnergeber online auf den Punkt – damit die richtigen Menschen sich melden.",
     heroImage: "/images/hero-bg.webp",
-    heroAlt: "Recruiting-Auftritt für Finanzberater-Teams",
+    heroAlt: "Recruiting-Auftritt für Unternehmen-Teams",
     benefits: [
       {
         text: "Klarer Partnerauftritt. Kandidaten verstehen, womit sie bei dir rechnen können.",
@@ -374,7 +374,7 @@ export const leistungenPages: ServicePageContent[] = [
       title: "Recruiting, das zu deinem Wachstum passt.",
       intro: [
         "Empfehlungen allein reichen oft nicht, wenn du systematisch aufbauen willst. Ohne klaren Recruiting-Auftritt wirkt jedes Team wie jedes andere.",
-        "Wir positionieren dich als attraktiven Partnergeber und bespielen die Kanäle, über die passende Kandidaten kommen – abgestimmt auf Finanzvertrieb.",
+        "Wir positionieren dich als attraktiven Partnergeber und bespielen die Kanäle, über die passende Kandidaten kommen – abgestimmt auf Online-Vertrieb.",
       ],
       sections: [
         sharedSections.howWeWork([
@@ -383,7 +383,7 @@ export const leistungenPages: ServicePageContent[] = [
           "Anfragen laufen strukturiert in CRM oder deinen Prozessen – nachvollziehbar für dich.",
         ]),
         sharedSections.whatYouGet([
-          "Recruiting-Seite und Botschaft für Vertriebspartner.",
+          "Recruiting-Seite und Botschaft für Partner.",
           "Kampagnen auf Meta und ggf. weiteren Kanälen für Kandidaten.",
           "Qualifizierung von Bewerbungen vor dem Erstgespräch.",
           "Auswertung, welche Ansprache funktioniert.",

@@ -22,7 +22,7 @@ export function PaperFeatureCardWebsiteHeader() {
         <p className="font-['Inter',system-ui,sans-serif] text-2xl/7 font-medium text-[#34C757]">
           Website, die verkauft
         </p>
-        <p className="font-['Inter',system-ui,sans-serif] text-2xl/7 font-medium text-[#181925]">
+        <p className="font-['Inter',system-ui,sans-serif] text-2xl/7 font-medium text-[#1b263b]">
           Sie wird zur digitalen Vertrauensbasis für neue Kunden.
         </p>
       </div>
@@ -38,7 +38,7 @@ export function PaperFeatureCardWebsiteHeader() {
               strokeLinejoin="round"
             />
           </svg>
-          <span className="font-['Inter',system-ui,sans-serif] text-sm font-medium leading-[142.857%] text-[#181925]">
+          <span className="font-['Inter',system-ui,sans-serif] text-sm font-medium leading-[142.857%] text-[#1b263b]">
             Klare Positionierung
           </span>
         </div>
@@ -50,7 +50,7 @@ export function PaperFeatureCardWebsiteHeader() {
             <path d="M11.078 11.076L12.951 12.949" fill="none" stroke="#33C758" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" />
             <path d="M11.078 4.923L12.951 3.05" fill="none" stroke="#33C758" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" />
           </svg>
-          <span className="font-['Inter',system-ui,sans-serif] text-sm font-medium leading-[142.857%] text-[#181925]">
+          <span className="font-['Inter',system-ui,sans-serif] text-sm font-medium leading-[142.857%] text-[#1b263b]">
             Marktpsychologie
           </span>
         </div>
@@ -75,17 +75,17 @@ export function PaperFeatureCardWebsiteHeader() {
             <ellipse cx="5.55" cy="6.25" rx="1.05" ry="1.05" fill="#33C758" />
             <ellipse cx="10.45" cy="6.25" rx="1.05" ry="1.05" fill="#33C758" />
           </svg>
-          <span className="font-['Inter',system-ui,sans-serif] text-sm font-medium leading-[142.857%] text-[#181925]">
+          <span className="font-['Inter',system-ui,sans-serif] text-sm font-medium leading-[142.857%] text-[#1b263b]">
             Mehr Vertrauen
           </span>
         </div>
       </div>
       <span className={featureCardCtaClass}>
-        <span className="w-max shrink-0 font-['Inter',system-ui,sans-serif] text-sm font-medium leading-[142.857%] text-[#181925]">
+        <span className="w-max shrink-0 font-['Inter',system-ui,sans-serif] text-sm font-medium leading-[142.857%] text-[#1b263b]">
           Analyse anfragen
         </span>
         <svg width={16} height={16} viewBox="0 0 16 16" className="shrink-0 overflow-hidden" aria-hidden>
-          <path d="M6 12L10 8L6 4" fill="none" stroke="#181925" strokeWidth={1.25} strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M6 12L10 8L6 4" fill="none" stroke="#1b263b" strokeWidth={1.25} strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </span>
     </div>

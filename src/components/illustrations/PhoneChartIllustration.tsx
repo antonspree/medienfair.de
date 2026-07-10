@@ -17,7 +17,7 @@ export function PhoneChartIllustration() {
         <div className="mx-auto overflow-hidden rounded-t-[40px] border border-transparent bg-[#FAFAFABF] px-2 pt-2 [box-shadow:0_0_0_1px_rgba(0,0,0,0.08),0_4px_6px_-1px_rgba(0,0,0,0.07)]">
           <div className="overflow-hidden rounded-t-4xl bg-white px-6 pt-2 pb-16 [box-shadow:0_0_0_1px_rgba(0,0,0,0.08),0_1px_3px_rgba(0,0,0,0.07)]">
             <div className="flex items-center justify-between py-2 pl-4">
-              <span className="font-sans text-xs font-semibold text-[#09090B]">9:41</span>
+              <span className="font-sans text-xs font-semibold text-[#1b263b]">9:41</span>
               <div className="flex items-end gap-1">
                 <svg width={16} height={16} viewBox="0 0 24 24" aria-hidden><path d="M2 20h.01" fill="none" stroke="oklch(14.1% 0.005 285.9)" strokeWidth={2} /><path d="M7 20v-4M12 20v-8M17 20V8" fill="none" stroke="oklch(14.1% 0.005 285.9)" strokeWidth={2} /></svg>
                 <svg width={18} height={18} viewBox="0 0 24 24" aria-hidden><path d="M12 20h.01" fill="none" stroke="oklch(14.1% 0.005 285.9)" strokeWidth={2} /><path d="M5 12.859a10 10 0 0 1 14 0M8.5 16.429a5 5 0 0 1 7 0" fill="none" stroke="oklch(14.1% 0.005 285.9)" strokeWidth={2} /></svg>
@@ -25,7 +25,7 @@ export function PhoneChartIllustration() {
               </div>
             </div>
             <div className="mt-6 flex items-center gap-2">
-              <span className="font-sans text-xs text-[#52525C]">Running</span>
+              <span className="font-sans text-xs text-[#1b263b]/70">Running</span>
               <span className="flex items-center gap-1">
                 <span className="flex size-3 shrink-0 items-center justify-center rounded-xs bg-[oklch(59.6%_0.145_163.2)]">
                   <svg width={8} height={8} viewBox="0 0 24 24" aria-hidden><polyline points="22 7 13.5 15.5 8.5 10.5 2 17" fill="none" stroke="#fff" strokeWidth={2} /><polyline points="16 7 22 7 22 13" fill="none" stroke="#fff" strokeWidth={2} /></svg>
@@ -33,7 +33,7 @@ export function PhoneChartIllustration() {
                 <span className="font-sans text-[11px] font-medium text-[oklch(59.6%_0.145_163.2)]">65%</span>
               </span>
             </div>
-            <div className="mt-0.5 flex gap-2 font-sans text-base text-[#09090B]">
+            <div className="mt-0.5 flex gap-2 font-sans text-base text-[#1b263b]">
               <span>11hr</span>
               <span>59min</span>
             </div>
@@ -44,7 +44,7 @@ export function PhoneChartIllustration() {
                     className={`w-1/2 shrink-0 rounded-sm ${bar.gradient ? "" : "bg-[#09090B1A]"} ${bar.h}`}
                     style={bar.gradient ? { backgroundImage: "linear-gradient(in oklab 180deg, oklab(87.1% -0.135 0.065) 0%, oklab(72.3% -0.189 0.111) 100%)" } : undefined}
                   />
-                  <span className="font-sans text-xs text-[#52525C]">{bar.label}</span>
+                  <span className="font-sans text-xs text-[#1b263b]/70">{bar.label}</span>
                 </div>
               ))}
             </div>

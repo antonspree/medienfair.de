@@ -79,7 +79,7 @@ export function ServiceSubpage({ content }: ServiceSubpageProps) {
                 {content.badge}
               </span>
             </div>
-            <h1 className="flex w-full max-w-[23.0625rem] flex-wrap justify-center text-center text-[36px] font-medium leading-[111.111%] text-[#181925]">
+            <h1 className="flex w-full max-w-[23.0625rem] flex-wrap justify-center text-center text-[36px] font-medium leading-[111.111%] text-[#1b263b]">
               {content.headline}
             </h1>
             <p className="flex flex-wrap justify-center text-balance text-center text-base font-medium leading-[150%] text-[#999999]">
@@ -88,8 +88,8 @@ export function ServiceSubpage({ content }: ServiceSubpageProps) {
           </Reveal>
 
           <Reveal delay={0.1} className="mx-auto mt-6 w-full max-w-5xl px-5">
-            <div className="w-full overflow-clip rounded-xl border border-solid border-[#E8E8E8]">
-              <div className="relative aspect-video w-full overflow-clip bg-[#F8F8F8]">
+            <div className="w-full overflow-clip rounded-xl border border-solid border-black/[0.06]">
+              <div className="relative aspect-video w-full overflow-clip bg-[#FAFAFA]">
                 <Image
                   src={content.heroImage}
                   alt={content.heroAlt}
@@ -124,17 +124,28 @@ export function ServiceSubpage({ content }: ServiceSubpageProps) {
                   <BenefitIcon type={benefit.icon} stroke={iconStroke} />
                 </svg>
               </div>
-              <p className="flex flex-wrap justify-center text-center text-base/5 font-medium text-[#181925]">
+              <p className="flex flex-wrap justify-center text-center text-base/5 font-medium text-[#1b263b]">
                 {benefit.text}
               </p>
             </Reveal>
           ))}
         </div>
+
+        {content.team ? (
+          <Reveal delay={0.15} className="w-full self-stretch px-5">
+            <TeamGrid
+              heading={content.team.heading}
+              intro={content.team.intro}
+              members={content.team.members}
+              variant="section"
+            />
+          </Reveal>
+        ) : null}
       </div>
 
       <div className="mx-auto flex w-full max-w-3xl flex-col items-center gap-6.75">
         <Reveal className="mx-auto flex w-full max-w-3xl flex-col items-center gap-5 px-5">
-          <h2 className="flex max-w-lg flex-wrap justify-center text-balance text-center text-[36px] font-medium leading-[111%] text-[#181925]">
+          <h2 className="flex max-w-lg flex-wrap justify-center text-balance text-center text-[36px] font-medium leading-[111%] text-[#1b263b]">
             {content.article.title}
           </h2>
         </Reveal>
@@ -144,32 +155,22 @@ export function ServiceSubpage({ content }: ServiceSubpageProps) {
             {content.article.intro.map((paragraph) => (
               <p
                 key={paragraph}
-                className="mt-4 text-base font-medium leading-[137.5%] text-[#666666] first:mt-0"
+                className="mt-4 text-base font-medium leading-[137.5%] text-[#1b263b]/70 first:mt-0"
               >
                 {paragraph}
               </p>
             ))}
           </Reveal>
 
-          {content.team ? (
-            <Reveal delay={0.08}>
-              <TeamGrid
-                heading={content.team.heading}
-                intro={content.team.intro}
-                members={content.team.members}
-              />
-            </Reveal>
-          ) : null}
-
           {content.article.sections.map((section, i) => (
             <Reveal key={section.heading} delay={i * 0.08}>
-              <h3 className="mb-4 mt-10 text-lg font-medium leading-[140%] text-[#181925]">
+              <h3 className="mb-4 mt-10 text-lg font-medium leading-[140%] text-[#1b263b]">
                 {section.heading}
               </h3>
               {section.paragraphs.map((paragraph) => (
                 <p
                   key={paragraph}
-                  className="mt-4 text-base font-medium leading-[137.5%] text-[#666666]"
+                  className="mt-4 text-base font-medium leading-[137.5%] text-[#1b263b]/70"
                 >
                   {paragraph}
                 </p>
